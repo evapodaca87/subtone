@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import { View, Text, StatusBar, StyleSheet } from 'react-native';
 import Tuner from './tuner';
 import Note from './note';
-import Bars from './bars';
 
-export default class App extends Component {
+export default class Main extends Component {
     state = {
         note: {
             name: 'A',
@@ -34,7 +33,6 @@ export default class App extends Component {
             <View style={style.body}>
                 <StatusBar backgroundColor='#000' translucent />
                 <Note {...this.state.note} />
-                {/* <Bars /> */}
                 <Text style={style.frequency}>{this.state.note.frequency.toFixed(1)} Hz</Text>
             </View>
         );
