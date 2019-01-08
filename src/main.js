@@ -4,7 +4,7 @@ import Tuner from './tuner';
 import Note from './note';
 import Bars from './bars';
 
-export default class Main extends Component {
+export default class App extends Component {
     state = {
         note: {
             name: 'A',
