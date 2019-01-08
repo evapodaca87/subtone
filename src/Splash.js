@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import { View, Text, StyleSheet, Platform, Image } from 'react-native';
-import logo from './Images/logo.png';
+import logo from '../Images/logo.png';
 
 export default class Splash extends PureComponent {
     render() {
