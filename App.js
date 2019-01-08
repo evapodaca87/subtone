@@ -5,6 +5,7 @@ import Note from './src/note';
 import logo from './Images/logo.png';
 import Splash from './src/Splash';
 import Main from './src/main';
+// import { Button, ThemeProvider } from 'react-native-elements';
 
 export default class App extends Component {
     state = {

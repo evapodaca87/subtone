@@ -10,10 +10,10 @@
     "release-android": "node node_modules/react-native/local-cli/cli.js run-android --variant=release"
   },
   "dependencies": {
-    "native-base": "^2.10.0",
     "pitchfinder": "^2.0.9",
     "react": "16.6.3",
     "react-native": "0.57.8",
+    "react-native-elements": "^1.0.0-beta7",
     "react-native-recording": "^0.4.1",
     "react-navigation": "^3.0.9"
   },
