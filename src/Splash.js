@@ -25,7 +25,7 @@ const style = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         width: '100%',
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        // backgroundColor: 'rgba(0, 0, 0, 0.5)',
         width: '90%'
     },
     logo: {

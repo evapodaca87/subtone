@@ -47,8 +47,7 @@ const style = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        width: '90%',
-        backgroundColor: 'rgba(0, 0, 0, 0.5)'
+        width: '90%'
     },
     frequency: {
         fontSize: 28,
