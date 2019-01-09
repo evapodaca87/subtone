@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, StatusBar, StyleSheet, ImageBackground } from 'react-native';
 import Tuner from './tuner';
 import Note from './note';
-import bottom from '../Images/hel.png';
+import bottom from '../Images/spinny.gif';
 
 export default class Main extends Component {
     state = {
@@ -31,7 +31,7 @@ export default class Main extends Component {
 
     render() {
         return (
-            <ImageBackground source={bottom} style={{ width: '110%', height: '100%', opacity:0.9 }}>
+            <ImageBackground source={bottom} style={{ width: '108%', height: '108%' }}>
                 <View style={style.body}>
                     <StatusBar backgroundColor='#000' translucent />
                     <Note {...this.state.note} />
