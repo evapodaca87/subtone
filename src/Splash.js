@@ -11,7 +11,7 @@ export default class Splash extends Component {
                 <View style={style.body}>
                     <Image style={style.logo} source={logo} />
                     <View style={style.blank} />
-                    <Button large bordered rounded danger onPress={this.props.toggleSplash} style={style.button}>
+                    <Button large rounded danger onPress={this.props.toggleSplash} style={style.button}>
                         <Text style={style.buttonText}>START</Text>
                     </Button>
                 </View>
@@ -33,14 +33,14 @@ const style = StyleSheet.create({
         width: '100%',
         marginTop: '10%',
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
-        borderRadius: 300,
+        borderRadius: 300
     },
     button: {
         width: '90%',
         height: '10%',
         marginLeft: '5%',
         justifyContent: 'center',
-        backgroundColor: 'rgba(0, 0, 0, 0.2)',
+        backgroundColor: 'rgba(0, 0, 0, 0.2)'
     },
     buttonText: {
         fontSize: 30,
