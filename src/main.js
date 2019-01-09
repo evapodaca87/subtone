@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { View, Text, StatusBar, StyleSheet } from 'react-native';
+import { View, Text, StatusBar, StyleSheet, ImageBackground } from 'react-native';
 import Tuner from './tuner';
 import Note from './note';
+import bottom from '../Images/hel.png';
 
 export default class Main extends Component {
     state = {
@@ -30,11 +31,13 @@ export default class Main extends Component {
 
     render() {
         return (
-            <View style={style.body}>
-                <StatusBar backgroundColor='#000' translucent />
-                <Note {...this.state.note} />
-                <Text style={style.frequency}>{this.state.note.frequency.toFixed(1)} Hz</Text>
-            </View>
+            <ImageBackground source={bottom} style={{ width: '110%', height: '100%', opacity:0.9 }}>
+                <View style={style.body}>
+                    <StatusBar backgroundColor='#000' translucent />
+                    <Note {...this.state.note} />
+                    <Text style={style.frequency}>{this.state.note.frequency.toFixed(1)} Hz</Text>
+                </View>
+            </ImageBackground>
         );
     }
 }
@@ -44,10 +47,12 @@ const style = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'black'
+        width: '90%',
+        backgroundColor: 'rgba(0, 0, 0, 0.5)'
     },
     frequency: {
         fontSize: 28,
-        color: 'blue'
+        color: 'white',
+        marginBottom: '30%'
     }
 });
