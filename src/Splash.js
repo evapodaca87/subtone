@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, Platform, Image, ImageBackground } from 'react-native';
 import { Container, Header, Content, Button, Text, Icon } from 'native-base';
-import logo from '../Images/logo_clear.png';
+import logo from '../Images/SubtoneLogoClear.png';
 import bottom from '../Images/hel.png';
 
 export default class Splash extends Component {
