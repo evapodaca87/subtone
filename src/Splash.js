@@ -8,7 +8,7 @@ export default class Splash extends Component {
         return (
             <View style={style.body}>
                 <Image style={style.logo} source={logo} />
-                <Button large rounded bordered danger onPress={this.props.toggleSplash} style={style.button}>
+                <Button large transparent danger onPress={this.props.toggleSplash} style={style.button}>
                     <Text style={style.buttonText}>START</Text>
                 </Button>
             </View>
