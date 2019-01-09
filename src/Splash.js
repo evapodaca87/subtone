@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, Platform, Image } from 'react-native';
+import { View, Text, StyleSheet, Platform, Image, Button } from 'react-native';
 import logo from '../Images/logo.png';
 
 export default class Splash extends Component {
@@ -7,9 +7,9 @@ export default class Splash extends Component {
         return (
             <View style={style.body}>
                 <Image style={style.logo} source={logo} />
-                <Text onPress={this.props.toggleSplash} style={style.welcome}>
-                    Start
-                </Text>
+                <Button onPress={this.props.toggleSplash} style={style.welcome}  title='START'>
+                   
+                </Button>
             </View>
         );
     }
@@ -28,10 +28,10 @@ const style = StyleSheet.create({
         color: 'blue'
     },
     welcome: {
-        fontSize: 20,
+        fontSize: 12,
         textAlign: 'center',
         margin: 10,
-        color: 'pink'
+        color: 'blue'
     },
     instructions: {
         textAlign: 'center',

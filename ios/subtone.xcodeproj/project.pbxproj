@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -788,7 +789,11 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 2DMS9FJ2SL;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 2DMS9FJ2SL;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -1177,21 +1182,6 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				A1C24B0B99DA48FE8DC6F105 /* AntDesign.ttf in Resources */,
-				57E85A86DB9049E19101D556 /* Entypo.ttf in Resources */,
-				C63B43D29A08489E94C9DFD5 /* EvilIcons.ttf in Resources */,
-				292C0CA929A04423BA298731 /* Feather.ttf in Resources */,
-				790977DF06EF44339203DD03 /* FontAwesome.ttf in Resources */,
-				04F5281C7BAF432F8AC82971 /* FontAwesome5_Brands.ttf in Resources */,
-				CE395C9A6E4F45CE954B64E7 /* FontAwesome5_Regular.ttf in Resources */,
-				DF3830671A224055A57443B2 /* FontAwesome5_Solid.ttf in Resources */,
-				58674AE1EF6B4BAAA6C59BC2 /* Foundation.ttf in Resources */,
-				15ECE84C20DE4678879F01A2 /* Ionicons.ttf in Resources */,
-				B09D912E6E5547EEB59B5471 /* MaterialCommunityIcons.ttf in Resources */,
-				23368C6B43C44F87999A8CD8 /* MaterialIcons.ttf in Resources */,
-				6961D31521F1444BA36DF9EB /* Octicons.ttf in Resources */,
-				E7977F8A8C814AC59213DEA6 /* SimpleLineIcons.ttf in Resources */,
-				E2778B5C8C6F415C9AAF4594 /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1310,6 +1300,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2DMS9FJ2SL;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1343,6 +1334,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 2DMS9FJ2SL;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-recording/lib/ios",
@@ -1373,6 +1365,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = 2DMS9FJ2SL;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-recording/lib/ios",
@@ -1385,7 +1378,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = subtone.1.1;
 				PRODUCT_NAME = subtone;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1396,6 +1389,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2DMS9FJ2SL;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-recording/lib/ios",
@@ -1408,7 +1402,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = subtone.1.1;
 				PRODUCT_NAME = subtone;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1443,7 +1437,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.subtone-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = subtone1.2.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1480,7 +1474,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.subtone-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = subtone1.2.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
