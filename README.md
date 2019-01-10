@@ -4,6 +4,9 @@
 
 ## Tech Stuff:
 * React Native
+* Nativebase
+* React Native Recording
 * Pitchfinder
+
 
 ## Created By Evan Apodaca for g99 Capstone
