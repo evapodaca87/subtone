@@ -83,6 +83,10 @@ export default class Main extends Component {
                         <Icon style={style.icon} name='home' />
                         {/* <Text style={style.texted}>Back</Text> */}
                     </Button>
+                    {/* <Button iconRight success style={style.back} onPress={this.props.toggleHome}> */}
+                        {/* <Icon style={style.icon} name='home' /> */}
+                        {/* <Text style={style.texted}>Back</Text> */}
+                    {/* </Button> */}
                 </View>
             </ImageBackground>
         );
@@ -104,7 +108,8 @@ const style = StyleSheet.create({
     },
     back: {
         marginTop: '-22%',
-        height: '20%'
+        height: '20%',
+        flexDirection: 'row',
     },
     texted: {
         fontSize: 30,
