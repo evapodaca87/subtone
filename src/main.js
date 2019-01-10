@@ -3,6 +3,17 @@ import { View, Text, StatusBar, StyleSheet, ImageBackground } from 'react-native
 import Tuner from './tuner';
 import Note from './note';
 import bottom from '../Images/spinspin.gif';
+import randomColor from 'randomcolor'; // import the script
+
+let color = randomColor(); // a hex code for an attractive color
+
+spin = function(options) {
+    return {
+        height: '108%',
+        width: '100%',
+        backgroundColor: color
+    };
+};
 
 export default class Main extends Component {
     state = {
@@ -31,7 +42,7 @@ export default class Main extends Component {
 
     render() {
         return (
-            <ImageBackground source={bottom} style={style.spin}>
+            <ImageBackground source={bottom} style={spin(spectrum)}>
                 <View style={style.content}>
                     <StatusBar backgroundColor='#000' translucent />
                     <Note style={style.numser} {...this.state.note} />
@@ -54,9 +65,5 @@ const style = StyleSheet.create({
         fontSize: 28,
         color: 'white',
         marginTop: '-3%'
-    },
-    spin: {
-        height: '108%',
-        width: '100%'
     }
 });

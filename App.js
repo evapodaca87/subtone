@@ -52,6 +52,6 @@ const style = StyleSheet.create({
     body: {
         flex: 1,
         justifyContent: 'center',
-        backgroundColor: 'black'
+        // backgroundColor: 'black'
     }
 });

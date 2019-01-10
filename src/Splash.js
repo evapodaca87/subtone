@@ -23,7 +23,8 @@ const style = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         width: '100%',
-        width: '100%'
+        width: '100%',
+        backgroundColor: 'black'
     },
     logo: {
         height: '40%',
