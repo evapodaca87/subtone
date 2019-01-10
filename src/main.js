@@ -5,16 +5,6 @@ import Note from './note';
 import bottom from '../Images/spinspin.gif';
 import randomColor from 'randomcolor'; // import the script
 
-let color = randomColor(); // a hex code for an attractive color
-
-spin = function(options) {
-    return {
-        height: '108%',
-        width: '100%',
-        backgroundColor: color
-    };
-};
-
 export default class Main extends Component {
     state = {
         note: {
@@ -40,9 +30,20 @@ export default class Main extends Component {
         };
     }
 
+    spin = function(options) {
+        color = randomColor(); // a hex code for an attractive color
+        return {
+            height: '108%',
+            width: '100%',
+            backgroundColor: color
+        };
+    };
+
     render() {
+        let keyName = this.state.note.name;
+        console.log(keyName);
         return (
-            <ImageBackground source={bottom} style={spin(spectrum)}>
+            <ImageBackground source={bottom} style={this.spin()}>
                 <View style={style.content}>
                     <StatusBar backgroundColor='#000' translucent />
                     <Note style={style.numser} {...this.state.note} />
