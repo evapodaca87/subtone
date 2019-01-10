@@ -31,7 +31,17 @@ export default class Main extends Component {
     }
 
     spin = function(options) {
-        color = randomColor(); // a hex code for an attractive color
+
+        let colorGen = () => {
+            if(this.state.note.name === 'A'){
+                return 'red'
+            }
+            else{
+                return 'blue'
+            }
+        }
+
+        let color = colorGen(); // a hex code for an attractive color
         return {
             height: '108%',
             width: '100%',
