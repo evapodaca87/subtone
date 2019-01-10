@@ -7,16 +7,13 @@ import splash from '../Images/bul.png';
 export default class Splash extends Component {
     render() {
         return (
-            // <ImageBackground source={bottom} style={{ width: '110%', height: '100%', opacity: 0.9 }}>
             <View style={style.body}>
                 <Image style={style.logo} source={logo} />
-                {/* <View style={style.blank} /> */}
                 <Image style={style.blah} source={splash} />
                 <Button large rounded danger onPress={this.props.toggleSplash} style={style.button}>
                     <Text style={style.buttonText}>START</Text>
                 </Button>
             </View>
-            // </ImageBackground>
         );
     }
 }
@@ -25,20 +22,18 @@ const style = StyleSheet.create({
     body: {
         flex: 1,
         justifyContent: 'center',
-        width: '110%',
-        // backgroundColor: 'rgba(0, 0, 0, 0.5)',
-        width: '90%'
+        width: '100%',
+        width: '100%'
     },
     logo: {
         height: '40%',
-        width: '110%',
+        width: '100%',
         marginTop: '10%',
         backgroundColor: 'rgba(0, 0, 0, 0.5)'
     },
     button: {
         width: '100%',
         height: '10%',
-        marginLeft: '5%',
         justifyContent: 'center',
         backgroundColor: 'rgba(0, 0, 0, 0.2)'
     },
@@ -50,8 +45,8 @@ const style = StyleSheet.create({
     blank: {
         height: '8%'
     },
-    blah : {
-        width: '110%',
+    blah: {
+        width: '100%',
         height: '20%'
     }
 });

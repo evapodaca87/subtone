@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, StatusBar, StyleSheet, ImageBackground } from 'react-native';
 import Tuner from './tuner';
 import Note from './note';
-import bottom from '../Images/spinny.gif';
+import bottom from '../Images/spinspin.gif';
 
 export default class Main extends Component {
     state = {
@@ -31,10 +31,10 @@ export default class Main extends Component {
 
     render() {
         return (
-            <ImageBackground source={bottom} style={{ width: '108%', height: '108%' }}>
-                <View style={style.body}>
+            <ImageBackground source={bottom} style={style.spin}>
+                <View style={style.content}>
                     <StatusBar backgroundColor='#000' translucent />
-                    <Note {...this.state.note} />
+                    <Note style={style.numser} {...this.state.note} />
                     <Text style={style.frequency}>{this.state.note.frequency.toFixed(1)} Hz</Text>
                 </View>
             </ImageBackground>
@@ -43,15 +43,20 @@ export default class Main extends Component {
 }
 
 const style = StyleSheet.create({
-    body: {
-        flex: 1,
-        justifyContent: 'center',
+    content: {
+        justifyContent: 'flex-start',
         alignItems: 'center',
-        width: '90%'
+        width: '100%',
+        height: '100%',
+        marginTop: '98%'
     },
     frequency: {
         fontSize: 28,
         color: 'white',
-        marginBottom: '30%'
+        marginTop: '-3%'
+    },
+    spin: {
+        height: '108%',
+        width: '100%'
     }
 });

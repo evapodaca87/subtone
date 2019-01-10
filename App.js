@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, StatusBar, StyleSheet, Image } from 'react-native';
 import Tuner from './src/tuner';
-import Note from './src/note';
-import logo from './Images/logo.png';
 import Splash from './src/Splash';
 import Main from './src/main';
 
@@ -54,6 +52,6 @@ const style = StyleSheet.create({
     body: {
         flex: 1,
         justifyContent: 'center',
-        backgroundColor: 'black',
+        backgroundColor: 'black'
     }
 });
