@@ -79,7 +79,7 @@ export default class Main extends Component {
                     <Text style={style.frequency}>{this.state.note.frequency.toFixed(1)} Hz</Text>
                 </View>
                 <View style={style.back}>
-                    <Button iconRight style={style.back} onPress={this.props.toggleHome}>
+                    <Button iconRight success style={style.back} onPress={this.props.toggleHome}>
                         <Icon style={style.icon} name='home' />
                         {/* <Text style={style.texted}>Back</Text> */}
                     </Button>
