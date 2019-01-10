@@ -110,12 +110,17 @@ const style = StyleSheet.create({
         marginTop: '-22%',
         height: '20%',
         flexDirection: 'row',
+        alignItems: 'center',
+        marginLeft: '2%'
     },
     texted: {
         fontSize: 30,
         marginLeft: '-5%'
     },
     icon: {
-        marginLeft: '3%'
+        paddingLeft: '22%',
+        marginRight: '-16.5%',
+        alignItems: 'center',
+        justifyContent: 'center'
     }
 });
