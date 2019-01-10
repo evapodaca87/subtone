@@ -22,6 +22,13 @@ export default class App extends Component {
         });
     };
 
+    toggleHome = () => {
+        this.setState({
+            showSplash: false,
+            showMain: true
+        });
+    };
+
     _update(note) {
         this.setState({ note });
     }
@@ -42,7 +49,7 @@ export default class App extends Component {
         return (
             <View style={style.body}>
                 {!this.state.showSplash && <Splash toggleSplash={this.toggleSplash} />}
-                {!this.state.showMain && <Main />}
+                {!this.state.showMain && <Main toggleHome={this.toggleHome} />}
             </View>
         );
     }
@@ -51,7 +58,7 @@ export default class App extends Component {
 const style = StyleSheet.create({
     body: {
         flex: 1,
-        justifyContent: 'center',
+        justifyContent: 'center'
         // backgroundColor: 'black'
     }
 });

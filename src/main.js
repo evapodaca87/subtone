@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { View, Text, StatusBar, StyleSheet, ImageBackground } from 'react-native';
+import { View, StatusBar, StyleSheet, ImageBackground } from 'react-native';
+import { Container, Header, Content, Button, Text, Icon } from 'native-base';
 import Tuner from './tuner';
 import Note from './note';
 import bottom from '../Images/spinspin.gif';
@@ -77,6 +78,12 @@ export default class Main extends Component {
                     <Note style={style.numser} {...this.state.note} />
                     <Text style={style.frequency}>{this.state.note.frequency.toFixed(1)} Hz</Text>
                 </View>
+                <View style={style.back}>
+                    <Button iconRight style={style.back} onPress={this.props.toggleHome}>
+                        <Icon style={style.icon} name='home' />
+                        {/* <Text style={style.texted}>Back</Text> */}
+                    </Button>
+                </View>
             </ImageBackground>
         );
     }
@@ -87,12 +94,23 @@ const style = StyleSheet.create({
         justifyContent: 'flex-start',
         alignItems: 'center',
         width: '100%',
-        height: '100%',
+        height: '68%',
         marginTop: '98%'
     },
     frequency: {
         fontSize: 28,
         color: 'white',
         marginTop: '-3%'
+    },
+    back: {
+        marginTop: '-22%',
+        height: '20%'
+    },
+    texted: {
+        fontSize: 30,
+        marginLeft: '-5%'
+    },
+    icon: {
+        marginLeft: '3%'
     }
 });
