@@ -64,29 +64,29 @@ export default class Main extends Component {
 
         let color = colorGen(); // a hex code for an attractive color
         return {
-            height: '108%',
+            flexDirection: 'column',
+            height: '100%',
             width: '100%',
             backgroundColor: color
+            // justifyContent: 'space-between'
         };
     };
 
     render() {
         return (
             <ImageBackground source={bottom} style={this.spin()}>
-                <View style={style.content}>
-                    <StatusBar backgroundColor='#000' translucent />
-                    <Note style={style.numser} {...this.state.note} />
-                    <Text style={style.frequency}>{this.state.note.frequency.toFixed(1)} Hz</Text>
-                </View>
-                <View style={style.back}>
-                    <Button iconRight success style={style.back} onPress={this.props.toggleHome}>
-                        <Icon style={style.icon} name='home' />
-                        {/* <Text style={style.texted}>Back</Text> */}
-                    </Button>
-                    {/* <Button iconRight success style={style.back} onPress={this.props.toggleHome}> */}
-                        {/* <Icon style={style.icon} name='home' /> */}
-                        {/* <Text style={style.texted}>Back</Text> */}
-                    {/* </Button> */}
+                <View style={style.all}>
+                    <View style={style.blank} />
+                    <View style={style.contents}>
+                        <StatusBar backgroundColor='#000' translucent />
+                        <Note style={style.numser} {...this.state.note} />
+                        <Text style={style.frequency}>{this.state.note.frequency.toFixed(1)} Hz</Text>
+                    </View>
+                    <View style={style.nav}>
+                        <Button iconRight success style={style.button} onPress={this.props.toggleHome}>
+                            <Icon style={style.icon} name='home' />
+                        </Button>
+                    </View>
                 </View>
             </ImageBackground>
         );
@@ -94,33 +94,40 @@ export default class Main extends Component {
 }
 
 const style = StyleSheet.create({
-    content: {
-        justifyContent: 'flex-start',
+    all: {
+        height: '100%',
+        flex: 1,
+        justifyContent: 'space-between',
+        flexDirection: 'column'
+    },
+    contents: {
+        flexDirection: 'column',
+        justifyContent: 'flex-end',
         alignItems: 'center',
         width: '100%',
-        height: '68%',
-        marginTop: '98%'
+        height: '45%'
     },
     frequency: {
         fontSize: 28,
-        color: 'white',
-        marginTop: '-3%'
+        color: 'white'
     },
-    back: {
-        marginTop: '-22%',
-        height: '20%',
+    button: {
         flexDirection: 'row',
-        alignItems: 'center',
-        marginLeft: '2%'
-    },
-    texted: {
-        fontSize: 30,
-        marginLeft: '-5%'
+        justifyContent: 'flex-end',
+        height: '25%'
     },
     icon: {
-        paddingLeft: '22%',
-        marginRight: '-16.5%',
-        alignItems: 'center',
-        justifyContent: 'center'
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    blank: {
+        height: '5%'
+    },
+    nav: {
+        height: '25%',
+        width: '100%',
+        flexDirection: 'column',
+        justifyContent: 'flex-end'
     }
 });

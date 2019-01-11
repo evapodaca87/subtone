@@ -43,9 +43,6 @@ const style = StyleSheet.create({
         textAlign: 'center',
         color: 'white'
     },
-    blank: {
-        height: '8%'
-    },
     blah: {
         width: '100%',
         height: '20%'
