@@ -50,7 +50,7 @@ export default class Main extends Component {
             } else if (this.state.note.name === 'A') {
                 return '#FFAE42';
             } else if (this.state.note.name === 'E') {
-                return '#FFFF00';
+                return '#EFDF00';
             } else if (this.state.note.name === 'B') {
                 return '#9ACD32';
             } else if (this.state.note.name === 'F♯') {
@@ -99,7 +99,56 @@ export default class Main extends Component {
                     <Modal isVisible={this.state.showKey}>
                         <View style={style.alls} onPress={this.showKey}>
                             <View style={style.blank} />
-                            <View style={style.contents} />
+                            <View style={style.colorKeys}>
+                                <View style={style.split}>
+                                    <View style={style.colorsC}>
+                                        <Text style={style.letter}>C</Text>
+                                    </View>
+                                    <View style={style.colorsG}>
+                                        <Text style={style.letter}>G</Text>
+                                    </View>
+                                </View>
+                                <View style={style.split}>
+                                    <View style={style.colorsD}>
+                                        <Text style={style.letter}>D</Text>
+                                    </View>
+                                    <View style={style.colorsA}>
+                                        <Text style={style.letter}>A</Text>
+                                    </View>
+                                </View>
+                                <View style={style.split}>
+                                    <View style={style.colorsE}>
+                                        <Text style={style.letter}>E</Text>
+                                    </View>
+                                    <View style={style.colorsB}>
+                                        <Text style={style.letter}>B</Text>
+                                    </View>
+                                </View>
+                                <View style={style.split}>
+                                    <View style={style.colorsFs}>
+                                        <Text style={style.letter}>F♯</Text>
+                                    </View>
+                                    <View style={style.colorsCs}>
+                                        <Text style={style.letter}>C♯</Text>
+                                    </View>
+                                </View>
+                                <View style={style.split}>
+                                    <View style={style.colorsF}>
+                                        <Text style={style.letter}>F</Text>
+                                    </View>
+                                    <View style={style.colorsDs}>
+                                        <Text style={style.letter}>D♯</Text>
+                                    </View>
+                                </View>
+                                <View style={style.split}>
+                                    <View style={style.colorsGs}>
+                                        <Text style={style.letter}>G♯</Text>
+                                    </View>
+                                    <View style={style.colorsAs}>
+                                        <Text style={style.letter}>A♯</Text>
+                                    </View>
+                                </View>
+                            </View>
                             <View style={style.navi}>
                                 <Button iconRight success style={style.button} onPress={this.props.toggleHome}>
                                     <Icon style={style.icon} name='home' />
@@ -168,5 +217,108 @@ const style = StyleSheet.create({
         justifyContent: 'space-between',
         marginBottom: '-5%'
     },
-    close: {}
+    close: {},
+    colorKeys: {
+        flexDirection: 'column',
+        height: '90%',
+        width: '100%',
+        justifyContent: 'space-between'
+    },
+    split: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        height: 100,
+        width: '100%',
+        margin: 0
+    },
+    colorsA: {
+        height: 100,
+        width: 100,
+        backgroundColor: '#FFAE42',
+        borderRadius: 10,
+        alignItems: 'center'
+    },
+    colorsAs: {
+        height: 100,
+        width: 100,
+        backgroundColor: '#4B0082',
+        borderRadius: 10,
+        alignItems: 'center'
+    },
+    colorsC: {
+        height: 100,
+        width: 100,
+        backgroundColor: '#ff0000',
+        borderRadius: 10,
+        alignItems: 'center'
+    },
+    colorsCs: {
+        height: 100,
+        width: 100,
+        backgroundColor: '#0D98BA',
+        borderRadius: 10,
+        alignItems: 'center'
+    },
+    colorsD: {
+        height: 100,
+        width: 100,
+        backgroundColor: '#0D98BA',
+        borderRadius: 10,
+        alignItems: 'center'
+    },
+    colorsDs: {
+        height: 100,
+        width: 100,
+        backgroundColor: '#0000FF',
+        borderRadius: 10,
+        alignItems: 'center'
+    },
+    colorsG: {
+        height: 100,
+        width: 100,
+        backgroundColor: '#ff4500',
+        borderRadius: 10,
+        alignItems: 'center'
+    },
+    colorsF: {
+        height: 100,
+        width: 100,
+        backgroundColor: '#CD00CD',
+        borderRadius: 10,
+        alignItems: 'center'
+    },
+    colorsFs: {
+        height: 100,
+        width: 100,
+        backgroundColor: '#00FF00',
+        borderRadius: 10,
+        alignItems: 'center'
+    },
+    colorsE: {
+        height: 100,
+        width: 100,
+        backgroundColor: '#EFDF00',
+        borderRadius: 10,
+        alignItems: 'center'
+    },
+    colorsB: {
+        height: 100,
+        width: 100,
+        backgroundColor: '#9ACD32',
+        borderRadius: 10,
+        alignItems: 'center'
+    },
+    colorsGs: {
+        height: 100,
+        width: 100,
+        backgroundColor: '#8A2BE2',
+        borderRadius: 10,
+        alignItems: 'center'
+    },
+    letter: {
+        // height: 90,
+        fontSize: 80,
+        fontWeight: '700',
+        color: 'white'
+    }
 });
