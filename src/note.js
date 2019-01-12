@@ -32,7 +32,7 @@ const style = StyleSheet.create({
         textShadowRadius: 10
     },
     sharp: {
-        fontSize: 32,
+        fontSize: 20,
         color: 'white',
         position: 'absolute',
         textShadowColor: 'rgba(0, 0, 0, 0.95)',
