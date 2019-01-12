@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, StatusBar, StyleSheet, ImageBackground } from 'react-native';
-import { Container, Header, Content, Button, Text, Icon } from 'native-base';
+import { Container, Header, Content, Button, Text, Icon, Row } from 'native-base';
 import Modal from 'react-native-modal';
 import Tuner from './tuner';
 import Note from './note';
@@ -97,10 +97,17 @@ export default class Main extends Component {
                         </Button>
                     </View>
                     <Modal isVisible={this.state.showKey}>
-                        <View onPress={this.showKey}>
-                            <Button danger onPress={this.showKey}>
-                                <Text>CLOSE</Text>
-                            </Button>
+                        <View style={style.alls} onPress={this.showKey}>
+                            <View style={style.blank} />
+                            <View style={style.contents} />
+                            <View style={style.navi}>
+                                <Button iconRight success style={style.button} onPress={this.props.toggleHome}>
+                                    <Icon style={style.icon} name='home' />
+                                </Button>
+                                <Button iconRight danger style={style.button} onPress={this.showKey}>
+                                    <Icon style={style.icon} name='key' />
+                                </Button>
+                            </View>
                         </View>
                     </Modal>
                 </View>
@@ -112,6 +119,13 @@ export default class Main extends Component {
 const style = StyleSheet.create({
     all: {
         height: '100%',
+        justifyContent: 'space-between',
+        flexDirection: 'column'
+    },
+    alls: {
+        height: '100%',
+        width: '110%',
+        marginLeft: '-5%',
         justifyContent: 'space-between',
         flexDirection: 'column'
     },
@@ -141,5 +155,18 @@ const style = StyleSheet.create({
         width: '100%',
         flexDirection: 'row',
         justifyContent: 'space-between'
-    }
+    },
+    mode: {
+        flexDirection: 'column',
+        height: '105%',
+        width: '100%',
+        justifyContent: 'flex-end'
+    },
+    navi: {
+        width: '100%',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginBottom: '-5%'
+    },
+    close: {}
 });
