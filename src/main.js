@@ -68,7 +68,6 @@ export default class Main extends Component {
             height: '100%',
             width: '100%',
             backgroundColor: color
-            // justifyContent: 'space-between'
         };
     };
 
@@ -78,13 +77,15 @@ export default class Main extends Component {
                 <View style={style.all}>
                     <View style={style.blank} />
                     <View style={style.contents}>
-                        <StatusBar backgroundColor='#000' translucent />
                         <Note style={style.numser} {...this.state.note} />
                         <Text style={style.frequency}>{this.state.note.frequency.toFixed(1)} Hz</Text>
                     </View>
                     <View style={style.nav}>
                         <Button iconRight success style={style.button} onPress={this.props.toggleHome}>
                             <Icon style={style.icon} name='home' />
+                        </Button>
+                        <Button iconRight danger style={style.button} onPress={this.props.toggleHome}>
+                            <Icon style={style.icon} name='key' />
                         </Button>
                     </View>
                 </View>
@@ -96,25 +97,22 @@ export default class Main extends Component {
 const style = StyleSheet.create({
     all: {
         height: '100%',
-        flex: 1,
         justifyContent: 'space-between',
         flexDirection: 'column'
     },
     contents: {
-        flexDirection: 'column',
-        justifyContent: 'flex-end',
-        alignItems: 'center',
-        width: '100%',
-        height: '45%'
+        alignItems: 'center'
     },
     frequency: {
-        fontSize: 28,
-        color: 'white'
+        fontSize: 35,
+        color: 'white',
+        textShadowColor: 'rgba(0, 0, 0, 0.95)',
+        textShadowOffset: { width: 3, height: 5 },
+        textShadowRadius: 4
     },
     button: {
         flexDirection: 'row',
         justifyContent: 'flex-end',
-        height: '25%',
         width: '14%'
     },
     icon: {
@@ -122,12 +120,11 @@ const style = StyleSheet.create({
         marginLeft: '5%'
     },
     blank: {
-        height: '5%'
+        //
     },
     nav: {
-        height: '25%',
         width: '100%',
-        flexDirection: 'column',
-        justifyContent: 'flex-end'
+        flexDirection: 'row',
+        justifyContent: 'flex-start'
     }
 });
