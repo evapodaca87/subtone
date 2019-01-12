@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View, StatusBar, StyleSheet, ImageBackground } from 'react-native';
 import { Container, Header, Content, Button, Text, Icon } from 'native-base';
+import Modal from 'react-native-modal';
 import Tuner from './tuner';
 import Note from './note';
 import bottom from '../Images/spinspin.gif';
@@ -12,7 +13,20 @@ export default class Main extends Component {
             name: 'A',
             octave: 4,
             frequency: 440
-        }
+        },
+        showKey: false
+    };
+
+    onKey = () => {
+        this.setState({
+            showKey: true
+        });
+    };
+
+    offKey = () => {
+        this.setState({
+            showKey: false
+        });
     };
 
     _update(note) {
@@ -84,10 +98,17 @@ export default class Main extends Component {
                         <Button iconRight success style={style.button} onPress={this.props.toggleHome}>
                             <Icon style={style.icon} name='home' />
                         </Button>
-                        <Button iconRight danger style={style.button} onPress={this.props.toggleHome}>
+                        <Button iconRight danger style={style.button} onPress={this.onKey}>
                             <Icon style={style.icon} name='key' />
                         </Button>
                     </View>
+                    <Modal onPress={this.offKey} isVisible={this.state.showKey}>
+                        <View>
+                            <Button danger onPress={this.offKey}>
+                                <Text>CLOSE</Text>
+                            </Button>
+                        </View>
+                    </Modal>
                 </View>
             </ImageBackground>
         );
