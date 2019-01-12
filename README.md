@@ -12,6 +12,10 @@ Home Screen: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 ![Home Screen](http://i65.tinypic.com/xaunu8.png "Home Screen")
 ![Tuner Screen](http://i63.tinypic.com/34pj81g.png "Tuner Screen")
 
+Color Key:
+
+![Color Key Screen](http://i63.tinypic.com/34fb707.png "Color Key Screen")
+
 ## Tech Stuff:
 * React Native
 * Nativebase
