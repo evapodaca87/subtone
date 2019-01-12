@@ -17,15 +17,9 @@ export default class Main extends Component {
         showKey: false
     };
 
-    onKey = () => {
+    showKey = () => {
         this.setState({
-            showKey: true
-        });
-    };
-
-    offKey = () => {
-        this.setState({
-            showKey: false
+            showKey: !this.state.showKey
         });
     };
 
@@ -98,13 +92,13 @@ export default class Main extends Component {
                         <Button iconRight success style={style.button} onPress={this.props.toggleHome}>
                             <Icon style={style.icon} name='home' />
                         </Button>
-                        <Button iconRight danger style={style.button} onPress={this.onKey}>
+                        <Button iconRight danger style={style.button} onPress={this.showKey}>
                             <Icon style={style.icon} name='key' />
                         </Button>
                     </View>
-                    <Modal onPress={this.offKey} isVisible={this.state.showKey}>
-                        <View>
-                            <Button danger onPress={this.offKey}>
+                    <Modal isVisible={this.state.showKey}>
+                        <View onPress={this.showKey}>
+                            <Button danger onPress={this.showKey}>
                                 <Text>CLOSE</Text>
                             </Button>
                         </View>
