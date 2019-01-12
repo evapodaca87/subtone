@@ -1,4 +1,4 @@
-# Subtone
+![Subtone](http://i67.tinypic.com/2qkkx3o.png "Subtone")
 * Chromatic audio tuner in React Native.
 * Renders colors for each key in order to help artists learn to stay in tune.
 
