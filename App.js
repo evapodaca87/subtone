@@ -28,7 +28,7 @@ export default class App extends Component {
                 color: 'red',
                 textAlign: 'center'
             },
-            duration: 2000
+            duration: 1000
         });
     };
 
