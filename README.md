@@ -4,7 +4,8 @@
 
 # Screenshots
 Home Screen: 
-[Home Screen](http://i65.tinypic.com/xaunu8.png "Home Screen")
+
+![Home Screen](http://i65.tinypic.com/xaunu8.png "Home Screen")
 
 ## Tech Stuff:
 * React Native
