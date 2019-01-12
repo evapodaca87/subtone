@@ -3,6 +3,10 @@
 * Renders colors for each key in order to help artists learn to stay in tune.
 
 # Screenshots
+App Logo:
+
+![App Logo](http://i66.tinypic.com/28430j.png "App Logo")
+
 Home Screen: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tuner Screen:
 
 ![Home Screen](http://i65.tinypic.com/xaunu8.png "Home Screen")
