@@ -18,6 +18,9 @@
 		0A6B06074C4F4425AD34F87F /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69338D9218CD46478F1A9600 /* Feather.ttf */; };
 		0B05278F21EA6FEC004078DD /* SubtoneLogoBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B05279221EA6FEC004078DD /* SubtoneLogoBlack.png */; };
 		0B05279021EA6FEC004078DD /* SubtoneLogoBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B05279221EA6FEC004078DD /* SubtoneLogoBlack.png */; };
+		0B6C1EF121EA9A8500F2A4A1 /* ios in Resources */ = {isa = PBXBuildFile; fileRef = 0B6C1EF021EA9A8500F2A4A1 /* ios */; };
+		0B6C1EF421EA9B0600F2A4A1 /* ios in Resources */ = {isa = PBXBuildFile; fileRef = 0B6C1EF321EA9B0600F2A4A1 /* ios */; };
+		0B6C1EF621EA9B2300F2A4A1 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B6C1EF521EA9B2300F2A4A1 /* Images-2.xcassets */; };
 		11A2E9DEF4D14BD0BFFFB4B9 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB8857CAE31941F880BE59B9 /* Octicons.ttf */; };
 		11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
@@ -369,6 +372,9 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* subtoneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = subtoneTests.m; sourceTree = "<group>"; };
 		0B05279121EA6FEC004078DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/SubtoneLogoBlack.png; sourceTree = "<group>"; };
+		0B6C1EF021EA9A8500F2A4A1 /* ios */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ios; sourceTree = "<group>"; };
+		0B6C1EF321EA9B0600F2A4A1 /* ios */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ios; sourceTree = "<group>"; };
+		0B6C1EF521EA9B2300F2A4A1 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Images-2.xcassets"; path = "subtone/Images-2.xcassets"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* subtone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = subtone.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -591,6 +597,7 @@
 		13B07FAE1A68108700A75B9A /* subtone */ = {
 			isa = PBXGroup;
 			children = (
+				0B6C1EF021EA9A8500F2A4A1 /* ios */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -598,6 +605,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				0B6C1EF521EA9B2300F2A4A1 /* Images-2.xcassets */,
 			);
 			name = subtone;
 			sourceTree = "<group>";
@@ -636,6 +644,7 @@
 		36563C2C3A534420897C915D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0B6C1EF321EA9B0600F2A4A1 /* ios */,
 				A6C104EA283B4C0E9641264A /* AntDesign.ttf */,
 				FCB271B5C2284150BAFEA63F /* Entypo.ttf */,
 				A322818F340149279C1A2778 /* EvilIcons.ttf */,
@@ -1235,12 +1244,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B6C1EF421EA9B0600F2A4A1 /* ios in Resources */,
 				0B05278F21EA6FEC004078DD /* SubtoneLogoBlack.png in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				0A6B06074C4F4425AD34F87F /* Feather.ttf in Resources */,
 				02DD0573D93647489C8B2329 /* FontAwesome.ttf in Resources */,
 				B7EFC4D9F8174ADCAABBB191 /* FontAwesome5_Brands.ttf in Resources */,
 				BF29C97CF75A4424B8AEFABD /* FontAwesome5_Regular.ttf in Resources */,
+				0B6C1EF621EA9B2300F2A4A1 /* Images-2.xcassets in Resources */,
 				965CA810CF984B438CB84805 /* MaterialCommunityIcons.ttf in Resources */,
 				11A2E9DEF4D14BD0BFFFB4B9 /* Octicons.ttf in Resources */,
 				D9BEDA3A30E5474FAD0EDD0F /* Roboto_medium.ttf in Resources */,
@@ -1253,6 +1264,7 @@
 				B20A9D6E86F5493DA25F42F5 /* FontAwesome5_Solid.ttf in Resources */,
 				7853F69B755845CFB9A2B8E9 /* Foundation.ttf in Resources */,
 				AFA3369959FA42DCAB38D1F3 /* Ionicons.ttf in Resources */,
+				0B6C1EF121EA9A8500F2A4A1 /* ios in Resources */,
 				58A585D493C24D6A8F04BD22 /* MaterialIcons.ttf in Resources */,
 				417938C253AA4DBD9A3152D5 /* SimpleLineIcons.ttf in Resources */,
 			);
@@ -1445,7 +1457,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1466,7 +1477,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = subtone.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = subtone.1.1.0;
 				PRODUCT_NAME = subtone;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1478,7 +1489,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1496,7 +1506,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = subtone.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = subtone.1.1.0;
 				PRODUCT_NAME = subtone;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
