@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { View, Text, StatusBar, StyleSheet, Image } from 'react-native';
+import { View, StatusBar, StyleSheet, Image } from 'react-native';
+import { Root, Container, Header, Content, Button, Text, Icon, Toast } from 'native-base';
 import Tuner from './src/tuner';
 import Splash from './src/Splash';
 import Main from './src/main';
@@ -19,6 +20,15 @@ export default class App extends Component {
         this.setState({
             showSplash: true,
             showMain: false
+        });
+        Toast.show({
+            text: 'EPILEPSY WARNING',
+            position: 'top',
+            textStyle: {
+                color: 'red',
+                textAlign: 'center'
+            },
+            duration: 2000
         });
     };
 
@@ -47,10 +57,12 @@ export default class App extends Component {
 
     render() {
         return (
-            <View style={style.body}>
-                {!this.state.showSplash && <Splash toggleSplash={this.toggleSplash} />}
-                {!this.state.showMain && <Main toggleHome={this.toggleHome} />}
-            </View>
+            <Root>
+                <View style={style.body}>
+                    {!this.state.showSplash && <Splash toggleSplash={this.toggleSplash} />}
+                    {!this.state.showMain && <Main toggleHome={this.toggleHome} />}
+                </View>
+            </Root>
         );
     }
 }

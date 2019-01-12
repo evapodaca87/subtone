@@ -1,19 +1,21 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, Platform, Image, ImageBackground } from 'react-native';
-import { Container, Header, Content, Button, Text, Icon } from 'native-base';
+import { Root, Container, Header, Content, Button, Text, Icon } from 'native-base';
 import logo from '../Images/SubtoneLogoClear.png';
 import splash from '../Images/bul.png';
 
 export default class Splash extends Component {
     render() {
         return (
-            <View style={style.body}>
-                <Image style={style.logo} source={logo} />
-                <Image style={style.blah} source={splash} />
-                <Button large rounded danger onPress={this.props.toggleSplash} style={style.button}>
-                    <Text style={style.buttonText}>START</Text>
-                </Button>
-            </View>
+            <Root>
+                <View style={style.body}>
+                    <Image style={style.logo} source={logo} />
+                    <Image style={style.blah} source={splash} />
+                    <Button large rounded danger onPress={this.props.toggleSplash} style={style.button}>
+                        <Text style={style.buttonText}>START</Text>
+                    </Button>
+                </View>
+            </Root>
         );
     }
 }
