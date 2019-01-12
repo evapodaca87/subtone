@@ -25,14 +25,15 @@ Home Screen: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 # Installation
 ## IOS
 <code>
-    cd subtone
-    npm install
+    cd subtone<br/>
+    npm install<br/>
     react-native run-ios
 </code>
+
 ## Android
 <code>
-    cd subtone
-    npm install
+    cd subtone<br/>
+    npm install<br/>
     react-native run-android
 </code>
 
