@@ -114,12 +114,12 @@ const style = StyleSheet.create({
     button: {
         flexDirection: 'row',
         justifyContent: 'flex-end',
-        height: '25%'
+        height: '25%',
+        width: '14%'
     },
     icon: {
         flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center'
+        marginLeft: '5%'
     },
     blank: {
         height: '5%'
