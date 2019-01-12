@@ -125,6 +125,6 @@ const style = StyleSheet.create({
     nav: {
         width: '100%',
         flexDirection: 'row',
-        justifyContent: 'flex-start'
+        justifyContent: 'space-between'
     }
 });
