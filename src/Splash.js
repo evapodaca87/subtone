@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, Platform, Image, ImageBackground } from 'react-native';
+import { View, StyleSheet, Platform, Image, ImageBackground, Linking, LinkingIOS } from 'react-native';
 import { Root, Container, Header, Content, Button, Text, Icon } from 'native-base';
 import logo from '../Images/SubtoneLogoClear.png';
 import splash from '../Images/bul.png';
@@ -14,6 +14,9 @@ export default class Splash extends Component {
                     <Button large rounded danger onPress={this.props.toggleSplash} style={style.button}>
                         <Text style={style.buttonText}>START</Text>
                     </Button>
+                    <Text style={style.legal} onPress={() => Linking.openURL('http://subtone-legal.surge.sh/')}>
+                        2019 Subtone Legal Agreement
+                    </Text>
                 </View>
             </Root>
         );
@@ -23,7 +26,7 @@ export default class Splash extends Component {
 const style = StyleSheet.create({
     body: {
         flex: 1,
-        justifyContent: 'center',
+        justifyContent: 'space-between',
         width: '100%',
         width: '100%',
         backgroundColor: 'black'
@@ -48,5 +51,11 @@ const style = StyleSheet.create({
     blah: {
         width: '100%',
         height: '20%'
+    },
+    legal: {
+        width: '100%',
+        textAlign: 'center',
+        color: 'white',
+        marginBottom: '5%'
     }
 });
