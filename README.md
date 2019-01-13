@@ -48,7 +48,8 @@ Color Key:
 
 # Credits
 
-# Licenses
+# Legal Page
+http://subtone-legal.surge.sh/
 
 
 #### Created By Evan Apodaca for g99 Capstone
