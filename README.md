@@ -50,8 +50,5 @@ Color Key:
 
 # Licenses
 
-# Privacy Policy
-Subtone uses the microphone to collect which key the sound is in, then erases that date right away.  Subtone does not collect any Data from it's customers
-
 
 #### Created By Evan Apodaca for g99 Capstone
