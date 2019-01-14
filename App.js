@@ -4,6 +4,7 @@ import { Root, Container, Header, Content, Button, Text, Icon, Toast } from 'nat
 import Tuner from './src/tuner';
 import Splash from './src/Splash';
 import Main from './src/main';
+import Log from './src/log';
 
 export default class App extends Component {
     state = {
@@ -13,13 +14,15 @@ export default class App extends Component {
             frequency: 440
         },
         showSplash: false,
-        showMain: true
+        showMain: true,
+        showLog: true
     };
 
     toggleSplash = () => {
         this.setState({
             showSplash: true,
-            showMain: false
+            showMain: false,
+            showLog: true
         });
         Toast.show({
             text: 'EPILEPSY WARNING',
@@ -35,7 +38,16 @@ export default class App extends Component {
     toggleHome = () => {
         this.setState({
             showSplash: false,
-            showMain: true
+            showMain: true,
+            showLog: true
+        });
+    };
+
+    toggleLog = () => {
+        this.setState({
+            showSplash: true,
+            showMain: true,
+            showLog: false
         });
     };
 
@@ -60,7 +72,8 @@ export default class App extends Component {
             <Root>
                 <View style={style.body}>
                     {!this.state.showSplash && <Splash toggleSplash={this.toggleSplash} />}
-                    {!this.state.showMain && <Main toggleHome={this.toggleHome} />}
+                    {!this.state.showMain && <Main toggleHome={this.toggleHome} toggleLog={this.toggleLog} />}
+                    {!this.state.showLog && <Log toggleHome={this.toggleSplash} />}
                 </View>
             </Root>
         );

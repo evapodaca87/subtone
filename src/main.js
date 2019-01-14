@@ -83,26 +83,26 @@ export default class Main extends Component {
         return (
             <ImageBackground source={bottom} style={this.spin()}>
                 <View style={style.all}>
-                    <View style={style.blank} />
+                    <View />
                     <View style={style.contents}>
                         <Note style={style.numser} {...this.state.note} />
                         <Text style={style.frequency}>{this.state.note.frequency.toFixed(1)} Hz</Text>
                     </View>
                     <View style={style.nav}>
-                        <Button iconCenter success style={style.homeButton} onPress={this.props.toggleHome}>
-                            <Icon style={style.icon} name='home' />
+                        <Button iconCenter style={style.homeButton} onPress={this.props.toggleHome}>
+                            <Icon name='home' />
                         </Button>
-                        <Button iconCenter primary style={style.logButton} onPress={this.showKey}>
-                            <Icon style={style.icon} name='cloud-download' />
+                        <Button iconCenter style={style.logButton} onPress={this.props.toggleLog}>
+                            <Icon name='cloud-download' />
                         </Button>
-                        <Button iconCenter danger style={style.keyButton} onPress={this.showKey}>
-                            <Icon style={style.icon} name='key' />
+                        <Button iconCenter style={style.keyButton} onPress={this.showKey}>
+                            <Icon name='key' />
                         </Button>
                     </View>
                     <Modal isVisible={this.state.showKey}>
                         <View style={style.alls} onPress={this.showKey}>
-                            <View style={style.blank} />
-                            <View style={style.colorKeys}>
+                            <View />
+                            <View>
                                 <View style={style.split}>
                                     <View style={style.colorsC}>
                                         <Text style={style.letter}>C</Text>
@@ -164,7 +164,7 @@ export default class Main extends Component {
                             </View>
                             <View style={style.navi}>
                                 <Button iconCenter danger style={style.closeButton} onPress={this.showKey}>
-                                    <Icon style={style.icon} name='close' />
+                                    <Icon name='close' />
                                 </Button>
                             </View>
                         </View>
@@ -205,52 +205,30 @@ const style = StyleSheet.create({
         backgroundColor: '#1ABC9C'
     },
     logButton: {
-        flexDirection: 'row',
         justifyContent: 'center',
         width: '33.3333%',
         backgroundColor: '#D35400'
     },
     keyButton: {
-        flexDirection: 'row',
         justifyContent: 'center',
         width: '33.3333%',
         backgroundColor: '#7D3C98'
     },
     closeButton: {
-        flexDirection: 'row',
         justifyContent: 'center',
         width: '100%',
         backgroundColor: 'red'
-    },
-    icon: {
-        flexDirection: 'column'
-    },
-    blank: {
-        //
     },
     nav: {
         width: '100%',
         flexDirection: 'row',
         justifyContent: 'space-between'
     },
-    mode: {
-        flexDirection: 'column',
-        height: '105%',
-        width: '100%',
-        justifyContent: 'flex-end'
-    },
     navi: {
         width: '100%',
         flexDirection: 'row',
         justifyContent: 'space-between',
         marginBottom: '-5%'
-    },
-    close: {},
-    colorKeys: {
-        flexDirection: 'column',
-        height: '90%',
-        width: '100%',
-        justifyContent: 'space-between'
     },
     split: {
         flexDirection: 'row',
@@ -344,7 +322,6 @@ const style = StyleSheet.create({
         alignItems: 'center'
     },
     letter: {
-        // height: 90,
         fontSize: 70,
         fontWeight: '700',
         color: 'white',
