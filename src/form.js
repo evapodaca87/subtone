@@ -1,30 +1,33 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, Platform } from 'react-native';
-import { Container, Header, Content, Form, Item, Input } from 'native-base';
+import { Text, Content, Form, Item, Input, Button, Icon } from 'native-base';
 export default class FormExample extends Component {
     render() {
         return (
             <View style={style.allOfIt}>
                 <Content>
                     <Form>
-                        <Item>
-                            <Input placeholder='Title' />
+                        <Item style={style.inputed}>
+                            <Input style={style.placeH} placeholder='Title' />
                         </Item>
-                        <Item>
-                            <Input placeholder='Artist' />
+                        <Item style={style.inputed}>
+                            <Input style={style.placeH} placeholder='Artist' />
                         </Item>
-                        <Item>
-                            <Input placeholder='Key' />
+                        <Item style={style.inputed}>
+                            <Input style={style.placeH} placeholder='Key' />
                         </Item>
-                        <Item>
-                            <Input placeholder='Octave' />
+                        <Item style={style.inputed}>
+                            <Input style={style.placeH} placeholder='Octave' />
                         </Item>
-                        <Item>
-                            <Input placeholder='Notes' />
+                        <Item style={style.inputed}>
+                            <Input style={style.placeH} placeholder='Notes' />
                         </Item>
-                        <Item last>
-                            <Input placeholder='Initials' />
+                        <Item style={style.inputed}>
+                            <Input style={style.placeH} placeholder='Initials' />
                         </Item>
+                        <Button style={style.logButton} onPress={this.props.toggleLog}>
+                            <Text>LOG</Text>
+                        </Button>
                     </Form>
                 </Content>
             </View>
@@ -35,7 +38,21 @@ export default class FormExample extends Component {
 const style = StyleSheet.create({
     allOfIt: {
         backgroundColor: 'black',
-        height: '40%',
-        flexDirection: 'column'
+        height: '50%',
+        flexDirection: 'column',
+        marginLeft: '10%'
+    },
+    inputed: {
+        backgroundColor: 'white',
+        width: '80%',
+        justifyContent: 'center'
+    },
+    logButton: {
+        width: '81%',
+        marginLeft: '4%',
+        justifyContent: 'center'
+    },
+    placeH: {
+        textAlign: 'center'
     }
 });
