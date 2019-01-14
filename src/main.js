@@ -163,11 +163,8 @@ export default class Main extends Component {
                                 </View>
                             </View>
                             <View style={style.navi}>
-                                <Button iconRight success style={style.button} onPress={this.props.toggleHome}>
-                                    <Icon style={style.icon} name='home' />
-                                </Button>
-                                <Button iconRight danger style={style.button} onPress={this.showKey}>
-                                    <Icon style={style.icon} name='key' />
+                                <Button iconCenter danger style={style.closeButton} onPress={this.showKey}>
+                                    <Icon style={style.icon} name='close' />
                                 </Button>
                             </View>
                         </View>
@@ -218,6 +215,12 @@ const style = StyleSheet.create({
         justifyContent: 'center',
         width: '33.3333%',
         backgroundColor: '#7D3C98'
+    },
+    closeButton: {
+        flexDirection: 'row',
+        justifyContent: 'center',
+        width: '100%',
+        backgroundColor: 'red'
     },
     icon: {
         flexDirection: 'column'
