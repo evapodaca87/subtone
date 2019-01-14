@@ -70,6 +70,6 @@ export default class App extends Component {
 const style = StyleSheet.create({
     body: {
         flex: 1,
-        justifyContent: 'center'
+        justifyContent: 'center',
     }
 });

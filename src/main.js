@@ -172,6 +172,8 @@ export default class Main extends Component {
 const style = StyleSheet.create({
     all: {
         height: '100%',
+        width: '100%',
+        maxWidth: '100%',
         justifyContent: 'space-between',
         flexDirection: 'column'
     },
