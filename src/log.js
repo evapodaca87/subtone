@@ -1,13 +1,16 @@
 import React, { PureComponent } from 'react';
 import { View, StyleSheet, Platform } from 'react-native';
 import { Container, Header, Content, Button, Text, Icon, Row } from 'native-base';
+import Form from './form';
 
 export default class Log extends PureComponent {
     render() {
         return (
             <View style={style.logPage}>
-                <View />
-                <View style={style.contents} />
+                <View>
+                    <Text>This will be the log view page</Text>
+                </View>
+                <Form style={style.inputs}/>
                 <View style={style.nav}>
                     <Button iconCenter style={style.close} onPress={this.props.toggleHome}>
                         <Icon style={style.icon} name='close' />
@@ -23,14 +26,19 @@ const style = StyleSheet.create({
         backgroundColor: 'black',
         height: '100%',
         flexDirection: 'column',
-        justifyContent: 'space-between',
+        justifyContent: 'space-between'
     },
     contents: {},
-    nav: {},
+    nav: {
+        height: '5%'
+    },
     close: {
         justifyContent: 'center',
         width: '100%',
         backgroundColor: 'red'
     },
-    icon: {}
+    icon: {},
+    inputs: {
+        height: '10%'
+    }
 });
