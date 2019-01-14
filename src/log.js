@@ -8,9 +8,9 @@ export default class Log extends PureComponent {
         return (
             <View style={style.logPage}>
                 <View>
-                    <Text>This will be the log view page</Text>
+                    <Text style={style.logHead}>This will be the log view page</Text>
                 </View>
-                <Form style={style.inputs}/>
+                <Form style={style.inputs} />
                 <View style={style.nav}>
                     <Button iconCenter style={style.close} onPress={this.props.toggleHome}>
                         <Icon style={style.icon} name='close' />
@@ -40,5 +40,9 @@ const style = StyleSheet.create({
     icon: {},
     inputs: {
         height: '10%'
+    },
+    logHead: {
+        color: 'white',
+        fontSize: 50,
     }
 });
