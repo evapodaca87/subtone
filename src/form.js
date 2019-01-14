@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, Platform } from 'react-native';
 import { Text, Content, Form, Item, Input, Button, Icon } from 'native-base';
+
 export default class FormExample extends Component {
     render() {
         return (
