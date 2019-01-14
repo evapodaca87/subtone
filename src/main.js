@@ -89,10 +89,13 @@ export default class Main extends Component {
                         <Text style={style.frequency}>{this.state.note.frequency.toFixed(1)} Hz</Text>
                     </View>
                     <View style={style.nav}>
-                        <Button iconRight success style={style.button} onPress={this.props.toggleHome}>
+                        <Button iconCenter success style={style.homeButton} onPress={this.props.toggleHome}>
                             <Icon style={style.icon} name='home' />
                         </Button>
-                        <Button iconRight danger style={style.button} onPress={this.showKey}>
+                        <Button iconCenter primary style={style.logButton} onPress={this.showKey}>
+                            <Icon style={style.icon} name='cloud-download' />
+                        </Button>
+                        <Button iconCenter danger style={style.keyButton} onPress={this.showKey}>
                             <Icon style={style.icon} name='key' />
                         </Button>
                     </View>
@@ -126,7 +129,9 @@ export default class Main extends Component {
                                 </View>
                                 <View style={style.split}>
                                     <View style={style.colorsFs}>
-                                        <Text style={style.letter}>F<Text style={style.hash}>♯</Text></Text>
+                                        <Text style={style.letter}>
+                                            F<Text style={style.hash}>♯</Text>
+                                        </Text>
                                     </View>
                                     <View style={style.colorsCs}>
                                         <Text style={style.letter}>
@@ -146,10 +151,14 @@ export default class Main extends Component {
                                 </View>
                                 <View style={style.split}>
                                     <View style={style.colorsGs}>
-                                        <Text style={style.letter}>G<Text style={style.hash}>♯</Text></Text>
+                                        <Text style={style.letter}>
+                                            G<Text style={style.hash}>♯</Text>
+                                        </Text>
                                     </View>
                                     <View style={style.colorsAs}>
-                                        <Text style={style.letter}>A<Text style={style.hash}>♯</Text></Text>
+                                        <Text style={style.letter}>
+                                            A<Text style={style.hash}>♯</Text>
+                                        </Text>
                                     </View>
                                 </View>
                             </View>
@@ -192,14 +201,26 @@ const style = StyleSheet.create({
         textShadowOffset: { width: 3, height: 5 },
         textShadowRadius: 4
     },
-    button: {
+    homeButton: {
         flexDirection: 'row',
-        justifyContent: 'flex-end',
-        width: '14%'
+        justifyContent: 'center',
+        width: '33.3333%',
+        backgroundColor: '#1ABC9C'
+    },
+    logButton: {
+        flexDirection: 'row',
+        justifyContent: 'center',
+        width: '33.3333%',
+        backgroundColor: '#D35400'
+    },
+    keyButton: {
+        flexDirection: 'row',
+        justifyContent: 'center',
+        width: '33.3333%',
+        backgroundColor: '#7D3C98'
     },
     icon: {
-        flexDirection: 'column',
-        marginLeft: '5%'
+        flexDirection: 'column'
     },
     blank: {
         //
