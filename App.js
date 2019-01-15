@@ -191,7 +191,7 @@ export default class App extends Component {
                             toggleLogPage={this.toggleLogPage}
                             toMain={this.toMain}
                             spin={this.spin()}
-                            sample={this.samples}
+                            samples={this.samples}
                         />
                     )}
                     {!this.state.showLog && (
@@ -203,7 +203,7 @@ export default class App extends Component {
                             toggleLogPage={this.toggleLogPage}
                             toMain={this.toMain}
                             spin={this.spin()}
-                            sample={this.samples}
+                            samples={this.samples}
                         />
                     )}
                     {!this.state.showSaved && (
@@ -215,7 +215,7 @@ export default class App extends Component {
                             toggleLogPage={this.toggleLogPage}
                             toMain={this.toMain}
                             spin={this.spin()}
-                            sample={this.samples}
+                            samples={this.samples}
                         />
                     )}
                 </View>

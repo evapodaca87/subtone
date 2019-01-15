@@ -12,12 +12,37 @@ var totallyRandomColor = randomColor(); // a hex code for an attractive color
 
 export default class Saved extends PureComponent {
     render() {
+        const data = [ 1, 2, 3, 4, 5, 6, 7 ];
+        const samples = [
+            {
+                title: "Don't Leave",
+                artist: 'Oshi',
+                key: 'B',
+                init: 'ESA'
+            },
+            {
+                title: 'Day 3',
+                artist: 'TaKu',
+                key: 'A',
+                init: 'ESA'
+            }
+        ];
         return (
             <View style={style.savedPage}>
                 <View />
-                <Text style={style.textedS} onPress={this.props.toggleSaved}>
-                    SAVE PAGE
-                </Text>
+                <View>
+                    <View style={style.view}>
+                        {samples.map((x) => {
+                            return (
+                                <View style={style.allsss}>
+                                    <View>
+                                        <Text>{x.title}</Text>
+                                    </View>
+                                </View>
+                            );
+                        })}
+                    </View>
+                </View>
                 <View style={style.nav}>
                     <Navbar
                         toggleHome={this.props.toggleHome}
@@ -52,5 +77,20 @@ const style = StyleSheet.create({
         width: '100%',
         flexDirection: 'row',
         justifyContent: 'space-between'
+    },
+    row1: {
+        alignSelf: 'stretch'
+    },
+    something: {
+        alignSelf: 'stretch',
+        flexDirection: 'column'
+    },
+    view: {
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    alsss: {
+        alignSelf: 'stretch',
+        flexDirection: 'row'
     }
 });
