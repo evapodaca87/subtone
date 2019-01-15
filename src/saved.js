@@ -55,29 +55,33 @@ const style = StyleSheet.create({
         color: 'white'
     },
     viewed: {
-        borderColor: 'black',
-        borderWidth: 2,
         width: '90%',
-        alignSelf: 'center'
+        height: '50%',
+        alignSelf: 'center',
+        flexDirection: 'column'
     },
     init: {
         width: '10%',
-        color: 'white'
+        color: 'white',
+        height: 'auto'
     },
     title: {
         width: '40%',
-        color: 'white'
+        color: 'white',
+        height: 'auto'
     },
     artist: {
         width: '40%',
-        color: 'white'
+        color: 'white',
+        height: 'auto'
     },
     key: {
         width: '10%',
-        color: 'white'
+        color: 'white',
+        height: 'auto'
     },
     track: {
-        width: '100%',
+        height: '15%',
         flexDirection: 'row',
         backgroundColor: 'rgba(0, 0, 0, 0.5)'
     }

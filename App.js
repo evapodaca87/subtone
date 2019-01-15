@@ -138,10 +138,28 @@ export default class App extends Component {
 
     samples = [
         {
+            title: 'The Light',
+            artist: 'Common',
+            key: 'G',
+            init: 'ESA'
+        },
+        {
             title: "Don't Leave",
             artist: 'Oshi',
             key: 'B',
-            init: 'ESA'
+            init: 'VM'
+        },
+        {
+            title: "Don't Leave",
+            artist: 'Oshi',
+            key: 'B',
+            init: 'VM'
+        },
+        {
+            title: "Don't Leave",
+            artist: 'Oshi',
+            key: 'B',
+            init: 'VM'
         },
         {
             title: 'Day 3',
