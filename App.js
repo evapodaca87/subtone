@@ -73,7 +73,7 @@ export default class App extends Component {
                 <View style={style.body}>
                     {!this.state.showSplash && <Splash toggleSplash={this.toggleSplash} />}
                     {!this.state.showMain && <Main toggleHome={this.toggleHome} toggleLog={this.toggleLog} />}
-                    {!this.state.showLog && <Log toggleHome={this.toggleSplash} />}
+                    {!this.state.showLog && <Log toggleSplash={this.toggleSplash} />}
                 </View>
             </Root>
         );

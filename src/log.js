@@ -10,9 +10,9 @@ export default class Log extends PureComponent {
                 <View>
                     <Text style={style.logHead}>This will be the log view page</Text>
                 </View>
-                <Form style={style.inputs} />
+                <Form style={style.inputs} toggleLog={this.props.toggleSplash} />
                 <View style={style.nav}>
-                    <Button iconCenter style={style.close} onPress={this.props.toggleHome}>
+                    <Button iconCenter style={style.close} onPress={this.props.toggleSplash}>
                         <Icon style={style.icon} name='close' />
                     </Button>
                 </View>
@@ -43,6 +43,6 @@ const style = StyleSheet.create({
     },
     logHead: {
         color: 'white',
-        fontSize: 50,
+        fontSize: 50
     }
 });
