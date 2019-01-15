@@ -12,31 +12,19 @@ var totallyRandomColor = randomColor(); // a hex code for an attractive color
 
 export default class Saved extends PureComponent {
     render() {
-        const data = [ 1, 2, 3, 4, 5, 6, 7 ];
-        const samples = [
-            {
-                title: "Don't Leave",
-                artist: 'Oshi',
-                key: 'B',
-                init: 'ESA'
-            },
-            {
-                title: 'Day 3',
-                artist: 'TaKu',
-                key: 'A',
-                init: 'ESA'
-            }
-        ];
         return (
             <View style={style.savedPage}>
                 <View />
                 <View>
                     <View style={style.view}>
-                        {samples.map((x) => {
+                        {this.props.samples.map((x) => {
                             return (
                                 <View style={style.allsss}>
                                     <View>
                                         <Text>{x.title}</Text>
+                                        <Text>{x.artist}</Text>
+                                        <Text>{x.key}</Text>
+                                        <Text>{x.init}</Text>
                                     </View>
                                 </View>
                             );
