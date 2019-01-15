@@ -16,7 +16,7 @@ export default class Saved extends PureComponent {
                     SAVE PAGE
                 </Text>
                 <View style={style.nav}>
-                <Navbar
+                    <Navbar
                         toggleHome={this.props.toggleHome}
                         toggleLog={this.props.toggleLog}
                         showKey={this.showKey}

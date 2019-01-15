@@ -6,7 +6,7 @@ import Navbar from '../Components/Navbar';
 export default class ColorKeyPage extends PureComponent {
     render() {
         return (
-            <View >
+            <View>
                 <View style={style.alls} onPress={this.showKey}>
                     <View />
                     <View>
@@ -70,13 +70,9 @@ export default class ColorKeyPage extends PureComponent {
                         </View>
                     </View>
                     <View style={style.navi}>
-                        <Navbar
-                            toggleHome={this.props.toggleHome}
-                            toggleLog={this.props.toggleLog}
-                            showKey={this.showKey}
-                            toggleLogPage={this.props.toggleLogPage}
-                            toMain={this.props.toMain}
-                        />
+                        <Button iconCenter style={style.closeButton} onPress={this.props.showKey}>
+                            <Icon name='close' />
+                        </Button>
                     </View>
                 </View>
             </View>
@@ -200,5 +196,10 @@ const style = StyleSheet.create({
         textShadowColor: 'rgba(0, 0, 0, 0.95)',
         textShadowOffset: { width: 3, height: 5 },
         textShadowRadius: 4
+    },
+    closeButton: {
+        width: '100%',
+        backgroundColor: 'red',
+        justifyContent: 'center'
     }
 });

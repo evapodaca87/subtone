@@ -43,7 +43,7 @@ const style = StyleSheet.create({
         justifyContent: 'center'
     },
     logButton: {
-        width: '81%',
+        width: '80%',
         marginLeft: '4%',
         justifyContent: 'center'
     },
