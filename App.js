@@ -51,6 +51,23 @@ export default class App extends Component {
         });
     };
 
+    inputLog = () => {
+        this.setState({
+            showSplash: true,
+            showMain: false,
+            showLog: true
+        });
+        Toast.show({
+            text: 'Entry Logged!',
+            position: 'top',
+            textStyle: {
+                color: 'yellow',
+                textAlign: 'center'
+            },
+            duration: 1500
+        });
+    };
+
     _update(note) {
         this.setState({ note });
     }
@@ -73,7 +90,7 @@ export default class App extends Component {
                 <View style={style.body}>
                     {!this.state.showSplash && <Splash toggleSplash={this.toggleSplash} />}
                     {!this.state.showMain && <Main toggleHome={this.toggleHome} toggleLog={this.toggleLog} />}
-                    {!this.state.showLog && <Log toggleSplash={this.toggleSplash} />}
+                    {!this.state.showLog && <Log toggleSplash={this.toggleSplash} inputLog={this.inputLog} />}
                 </View>
             </Root>
         );

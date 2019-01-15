@@ -8,9 +8,9 @@ export default class Log extends PureComponent {
         return (
             <View style={style.logPage}>
                 <View>
-                    <Text style={style.logHead}>This will be the log view page</Text>
+                    <Text style={style.logHead}>DATA</Text>
                 </View>
-                <Form style={style.inputs} toggleLog={this.props.toggleSplash} />
+                <Form style={style.inputs} inputLog={this.props.inputLog} />
                 <View style={style.nav}>
                     <Button iconCenter style={style.close} onPress={this.props.toggleSplash}>
                         <Icon style={style.icon} name='close' />
