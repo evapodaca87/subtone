@@ -77,7 +77,7 @@ const style = StyleSheet.create({
         width: '37.5%',
         color: 'white',
         height: 'auto',
-        fontSize: 25
+        fontSize: 22
     },
     key: {
         width: '10%',
@@ -88,6 +88,6 @@ const style = StyleSheet.create({
     track: {
         height: '15%',
         flexDirection: 'row',
-        backgroundColor: 'rgba(0, 0, 0, 0.5)'
+        backgroundColor: 'rgba(0, 0, 0, 0.7)'
     }
 });

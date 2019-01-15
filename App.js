@@ -152,12 +152,12 @@ export default class App extends Component {
         {
             title: 'Slide',
             artist: 'Inflated Penguins',
-            key: 'G#',
+            key: 'G',
             init: 'ESA'
         },
         {
             title: 'give u up',
-            artist: 'Maxwell Hits',
+            artist: 'maxwell hits',
             key: 'C',
             init: 'VM'
         },

@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { View, StyleSheet, ImageBackground } from 'react-native';
 import { Container, Header, Content, Button, Text, Icon, Row } from 'native-base';
-import Form from './form';
+import Form from '../Components/form';
 import Modal from 'react-native-modal';
 import Tuner from './tuner';
 import Note from './note';

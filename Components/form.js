@@ -9,16 +9,16 @@ export default class FormExample extends Component {
                 <Content>
                     <Form>
                         <Item style={style.inputed}>
-                            <Input style={style.placeH} placeholder='Title' placeholderTextColor= 'white'/>
+                            <Input style={style.placeH} placeholder='Title' placeholderTextColor='white' />
                         </Item>
                         <Item style={style.inputed}>
-                            <Input style={style.placeH} placeholder='Artist' placeholderTextColor= 'white'/>
+                            <Input style={style.placeH} placeholder='Artist' placeholderTextColor='white' />
                         </Item>
                         <Item style={style.inputed}>
-                            <Input style={style.placeH} placeholder='Key' placeholderTextColor= 'white'/>
+                            <Input style={style.placeH} placeholder='Key' placeholderTextColor='white' />
                         </Item>
                         <Item style={style.inputed}>
-                            <Input style={style.placeH} placeholder='Initials' placeholderTextColor= 'white'/>
+                            <Input style={style.placeH} placeholder='Initials' placeholderTextColor='white' />
                         </Item>
                         <Button style={style.logButton} onPress={this.props.inputLog}>
                             <Icon name='checkmark' />
@@ -37,7 +37,7 @@ const style = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
-        alignSelf: 'center',
+        alignSelf: 'center'
     },
     inputed: {
         backgroundColor: 'white',
@@ -46,7 +46,7 @@ const style = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         alignSelf: 'center',
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        backgroundColor: 'rgba(0, 0, 0, 0.7)'
     },
     logButton: {
         width: '80%',
@@ -54,9 +54,9 @@ const style = StyleSheet.create({
         alignItems: 'center',
         alignSelf: 'center',
         margin: 0,
-        padding: 0,
+        padding: 0
     },
     placeH: {
-        textAlign: 'center',
+        textAlign: 'center'
     }
 });
