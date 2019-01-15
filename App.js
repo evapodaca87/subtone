@@ -136,6 +136,21 @@ export default class App extends Component {
         });
     };
 
+    samples = [
+        {
+            title: "Don't Leave",
+            artist: 'Oshi',
+            key: 'B',
+            init: 'ESA'
+        },
+        {
+            title: 'Day 3',
+            artist: 'TaKu',
+            key: 'A',
+            init: 'ESA'
+        }
+    ];
+
     _update(note) {
         this.setState({ note });
     }
@@ -164,6 +179,7 @@ export default class App extends Component {
                             toggleLog={this.toggleLog}
                             toggleLogPage={this.toggleLogPage}
                             toMain={this.toMain}
+                            sample={this.samples}
                         />
                     )}
                     {!this.state.showMain && (
@@ -175,6 +191,7 @@ export default class App extends Component {
                             toggleLogPage={this.toggleLogPage}
                             toMain={this.toMain}
                             spin={this.spin()}
+                            sample={this.samples}
                         />
                     )}
                     {!this.state.showLog && (
@@ -186,6 +203,7 @@ export default class App extends Component {
                             toggleLogPage={this.toggleLogPage}
                             toMain={this.toMain}
                             spin={this.spin()}
+                            sample={this.samples}
                         />
                     )}
                     {!this.state.showSaved && (
@@ -197,6 +215,7 @@ export default class App extends Component {
                             toggleLogPage={this.toggleLogPage}
                             toMain={this.toMain}
                             spin={this.spin()}
+                            sample={this.samples}
                         />
                     )}
                 </View>
