@@ -38,6 +38,15 @@ export default class App extends Component {
         });
     };
 
+    toMain = () => {
+        this.setState({
+            showSplash: true,
+            showMain: false,
+            showLog: true,
+            showSaved: true
+        });
+    };
+
     toggleHome = () => {
         this.setState({
             showSplash: false,
@@ -110,6 +119,7 @@ export default class App extends Component {
                             toggleHome={this.toggleHome}
                             toggleLog={this.toggleLog}
                             toggleLogPage={this.toggleLogPage}
+                            toMain={this.toMain}
                         />
                     )}
                     {!this.state.showLog && <Log toggleSplash={this.toggleSplash} inputLog={this.inputLog} />}

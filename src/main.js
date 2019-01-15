@@ -5,6 +5,7 @@ import Modal from 'react-native-modal';
 import Tuner from './tuner';
 import Note from './note';
 import bottom from '../Images/spinspin.gif';
+import Navbar from '../Components/Navbar';
 import randomColor from 'randomcolor'; // import the script
 
 export default class Main extends Component {
@@ -88,20 +89,13 @@ export default class Main extends Component {
                         <Note style={style.numser} {...this.state.note} />
                         <Text style={style.frequency}>{this.state.note.frequency.toFixed(1)} Hz</Text>
                     </View>
-                    <View style={style.nav}>
-                        <Button iconCenter style={style.homeButton} onPress={this.props.toggleHome}>
-                            <Icon name='home' />
-                        </Button>
-                        <Button iconCenter style={style.logButton} onPress={this.props.toggleLog}>
-                            <Icon name='cloud-download' />
-                        </Button>
-                        <Button iconCenter style={style.viewlogButton} onPress={this.props.toggleLogPage}>
-                            <Icon name='list' />
-                        </Button>
-                        <Button iconCenter style={style.keyButton} onPress={this.showKey}>
-                            <Icon name='key' />
-                        </Button>
-                    </View>
+                    <Navbar
+                        toggleHome={this.props.toggleHome}
+                        toggleLog={this.props.toggleLog}
+                        showKey={this.showKey}
+                        toggleLogPage={this.props.toggleLogPage}
+                        toMain={this.props.toMain}
+                    />
                     <Modal isVisible={this.state.showKey}>
                         <View style={style.alls} onPress={this.showKey}>
                             <View />
