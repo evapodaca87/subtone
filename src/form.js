@@ -18,12 +18,6 @@ export default class FormExample extends Component {
                             <Input style={style.placeH} placeholder='Key' />
                         </Item>
                         <Item style={style.inputed}>
-                            <Input style={style.placeH} placeholder='Octave' />
-                        </Item>
-                        <Item style={style.inputed}>
-                            <Input style={style.placeH} placeholder='Notes' />
-                        </Item>
-                        <Item style={style.inputed}>
                             <Input style={style.placeH} placeholder='Initials' />
                         </Item>
                         <Button style={style.logButton} onPress={this.props.inputLog}>
@@ -39,7 +33,7 @@ export default class FormExample extends Component {
 const style = StyleSheet.create({
     allOfIt: {
         backgroundColor: 'black',
-        height: '50%',
+        height: '33%',
         flexDirection: 'column',
         marginLeft: '10%'
     },
