@@ -6,6 +6,7 @@ import Tuner from './tuner';
 import Note from './note';
 import bottom from '../Images/spinspin.gif';
 import Navbar from '../Components/Navbar';
+import ColorKeyPage from '../Components/ColorKeyPage';
 
 export default class Main extends Component {
     state = {
@@ -159,13 +160,9 @@ export default class Main extends Component {
                                 </View>
                             </View>
                             <View style={style.navi}>
-                                <Navbar
-                                    toggleHome={this.props.toggleHome}
-                                    toggleLog={this.props.toggleLog}
-                                    showKey={this.showKey}
-                                    toggleLogPage={this.props.toggleLogPage}
-                                    toMain={this.props.toMain}
-                                />
+                                <Button iconCenter style={style.closeButton} onPress={this.showKey}>
+                                    <Icon name='close' />
+                                </Button>
                             </View>
                         </View>
                     </Modal>

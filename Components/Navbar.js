@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react';
 import { View, StyleSheet, Platform } from 'react-native';
 import { Container, Header, Content, Button, Text, Icon, Row } from 'native-base';
-// import Form from './form';
 
 export default class Log extends PureComponent {
     render() {

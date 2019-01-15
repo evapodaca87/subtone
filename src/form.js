@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, Platform } from 'react-native';
 import { Text, Content, Form, Item, Input, Button, Icon } from 'native-base';
-import Modal from 'react-native-modal';
-import Tuner from './tuner';
-import Note from './note';
-import bottom from '../Images/spinspin.gif';
-import Navbar from '../Components/Navbar';
 
 export default class FormExample extends Component {
     render() {
