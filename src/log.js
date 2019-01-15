@@ -18,7 +18,8 @@ export default class Log extends PureComponent {
         return (
             <ImageBackground source={bottom} style={style.logPage}>
                 <View style={style.logPage}>
-                    <View />
+                    {/* <View /> */}
+                    <Text style={style.eh1}>Log</Text>
                     <Form style={style.inputs} inputLog={this.props.inputLog} />
                     <View style={style.nav}>
                         <Navbar
@@ -56,5 +57,11 @@ const style = StyleSheet.create({
     logHead: {
         color: 'white',
         fontSize: 50
-    }
+    },
+    eh1: {
+        fontSize: 80,
+        alignSelf: 'center',
+        marginTop: '15%',
+        color: 'white'
+    },
 });

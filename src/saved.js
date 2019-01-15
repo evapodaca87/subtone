@@ -14,22 +14,18 @@ export default class Saved extends PureComponent {
     render() {
         return (
             <View style={style.savedPage}>
-                <View />
-                <View>
-                    <View style={style.view}>
-                        {this.props.samples.map((x) => {
-                            return (
-                                <View style={style.allsss}>
-                                    <View>
-                                        <Text>{x.title}</Text>
-                                        <Text>{x.artist}</Text>
-                                        <Text>{x.key}</Text>
-                                        <Text>{x.init}</Text>
-                                    </View>
-                                </View>
-                            );
-                        })}
-                    </View>
+                <Text style={style.eh1}>Samples</Text>
+                <View style={style.viewed}>
+                    {this.props.samples.map((x) => {
+                        return (
+                            <View style={style.track}>
+                                <Text style={style.title}>{x.title}</Text>
+                                <Text style={style.artist}>{x.artist}</Text>
+                                <Text style={style.key}>{x.key}</Text>
+                                <Text style={style.init}>{x.init}</Text>
+                            </View>
+                        );
+                    })}
                 </View>
                 <View style={style.nav}>
                     <Navbar
@@ -49,36 +45,40 @@ const style = StyleSheet.create({
     savedPage: {
         backgroundColor: randomColor(),
         height: '100%',
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-        alignItems: 'center'
-    },
-    textedS: {
-        color: 'white'
-    },
-    closeButton: {
-        justifyContent: 'center',
         width: '100%',
-        backgroundColor: 'red'
-    },
-    nav: {
-        width: '100%',
-        flexDirection: 'row',
         justifyContent: 'space-between'
     },
-    row1: {
-        alignSelf: 'stretch'
+    eh1: {
+        fontSize: 80,
+        alignSelf: 'center',
+        marginTop: '15%',
+        color: 'white'
     },
-    something: {
-        alignSelf: 'stretch',
-        flexDirection: 'column'
+    viewed: {
+        borderColor: 'black',
+        borderWidth: 2,
+        width: '90%',
+        alignSelf: 'center'
     },
-    view: {
-        alignItems: 'center',
-        justifyContent: 'center'
+    init: {
+        width: '10%',
+        color: 'white'
     },
-    alsss: {
-        alignSelf: 'stretch',
-        flexDirection: 'row'
+    title: {
+        width: '40%',
+        color: 'white'
+    },
+    artist: {
+        width: '40%',
+        color: 'white'
+    },
+    key: {
+        width: '10%',
+        color: 'white'
+    },
+    track: {
+        width: '100%',
+        flexDirection: 'row',
+        backgroundColor: 'rgba(0, 0, 0, 0.5)'
     }
 });
