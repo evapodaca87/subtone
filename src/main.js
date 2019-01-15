@@ -40,49 +40,49 @@ export default class Main extends Component {
         };
     }
 
-    spin = function(options) {
-        let colorGen = () => {
-            if (this.state.note.name === 'C') {
-                return '#ff0000';
-            } else if (this.state.note.name === 'G') {
-                return '#ff4500';
-            } else if (this.state.note.name === 'D') {
-                return '#FFA500';
-            } else if (this.state.note.name === 'A') {
-                return '#FFAE42';
-            } else if (this.state.note.name === 'E') {
-                return '#EFDF00';
-            } else if (this.state.note.name === 'B') {
-                return '#9ACD32';
-            } else if (this.state.note.name === 'F♯') {
-                return '#00FF00';
-            } else if (this.state.note.name === 'C♯') {
-                return '#0D98BA';
-            } else if (this.state.note.name === 'F') {
-                return '#CD00CD';
-            } else if (this.state.note.name === 'D♯') {
-                return '#0000FF';
-            } else if (this.state.note.name === 'G♯') {
-                return '#8A2BE2';
-            } else if (this.state.note.name === 'A♯') {
-                return '#4B0082';
-            } else {
-                return 'black';
-            }
-        };
+    // spin = function(options) {
+    //     let colorGen = () => {
+    //         if (this.state.note.name === 'C') {
+    //             return '#ff0000';
+    //         } else if (this.state.note.name === 'G') {
+    //             return '#ff4500';
+    //         } else if (this.state.note.name === 'D') {
+    //             return '#FFA500';
+    //         } else if (this.state.note.name === 'A') {
+    //             return '#FFAE42';
+    //         } else if (this.state.note.name === 'E') {
+    //             return '#EFDF00';
+    //         } else if (this.state.note.name === 'B') {
+    //             return '#9ACD32';
+    //         } else if (this.state.note.name === 'F♯') {
+    //             return '#00FF00';
+    //         } else if (this.state.note.name === 'C♯') {
+    //             return '#0D98BA';
+    //         } else if (this.state.note.name === 'F') {
+    //             return '#CD00CD';
+    //         } else if (this.state.note.name === 'D♯') {
+    //             return '#0000FF';
+    //         } else if (this.state.note.name === 'G♯') {
+    //             return '#8A2BE2';
+    //         } else if (this.state.note.name === 'A♯') {
+    //             return '#4B0082';
+    //         } else {
+    //             return 'black';
+    //         }
+    //     };
 
-        let color = colorGen(); // a hex code for an attractive color
-        return {
-            flexDirection: 'column',
-            height: '100%',
-            width: '100%',
-            backgroundColor: color
-        };
-    };
+    //     let color = colorGen(); // a hex code for an attractive color
+    //     return {
+    //         flexDirection: 'column',
+    //         height: '100%',
+    //         width: '100%',
+    //         backgroundColor: color
+    //     };
+    // };
 
     render() {
         return (
-            <ImageBackground source={bottom} style={this.spin()}>
+            <ImageBackground source={bottom} style={this.props.spin}>
                 <View style={style.all}>
                     <View />
                     <View style={style.contents}>

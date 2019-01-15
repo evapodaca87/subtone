@@ -7,6 +7,9 @@ import Note from './note';
 import bottom from '../Images/spinspin.gif';
 import Navbar from '../Components/Navbar';
 
+var randomColor = require('randomcolor'); // import the script
+var totallyRandomColor = randomColor(); // a hex code for an attractive color
+
 export default class Saved extends PureComponent {
     render() {
         return (
@@ -31,7 +34,7 @@ export default class Saved extends PureComponent {
 
 const style = StyleSheet.create({
     savedPage: {
-        backgroundColor: 'black',
+        backgroundColor: randomColor(),
         height: '100%',
         flexDirection: 'column',
         justifyContent: 'space-between',

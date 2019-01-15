@@ -32,20 +32,25 @@ export default class FormExample extends Component {
 
 const style = StyleSheet.create({
     allOfIt: {
-        backgroundColor: 'black',
         height: '33%',
-        flexDirection: 'column',
-        marginLeft: '10%'
+        width: '100%',
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center'
     },
     inputed: {
         backgroundColor: 'white',
-        width: '80%',
-        justifyContent: 'center'
+        width: '90%',
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     logButton: {
         width: '80%',
-        marginLeft: '4%',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        alignItems: 'center',
+        alignSelf: 'center',
+        margin: 0,
+        padding: 0
     },
     placeH: {
         textAlign: 'center'

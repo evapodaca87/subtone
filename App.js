@@ -7,6 +7,9 @@ import Main from './src/main';
 import Log from './src/log';
 import Saved from './src/saved';
 
+var randomColor = require('randomcolor'); // import the script
+var totallyRandomColor = randomColor(); // a hex code for an attractive color
+
 export default class App extends Component {
     state = {
         note: {
@@ -18,6 +21,46 @@ export default class App extends Component {
         showMain: true,
         showLog: true,
         showSaved: true
+    };
+
+    spin = function(options) {
+        let colorGen = () => {
+            if (this.state.note.name === 'C') {
+                return '#ff0000';
+            } else if (this.state.note.name === 'G') {
+                return '#ff4500';
+            } else if (this.state.note.name === 'D') {
+                return '#FFA500';
+            } else if (this.state.note.name === 'A') {
+                return '#FFAE42';
+            } else if (this.state.note.name === 'E') {
+                return '#EFDF00';
+            } else if (this.state.note.name === 'B') {
+                return '#9ACD32';
+            } else if (this.state.note.name === 'F♯') {
+                return '#00FF00';
+            } else if (this.state.note.name === 'C♯') {
+                return '#0D98BA';
+            } else if (this.state.note.name === 'F') {
+                return '#CD00CD';
+            } else if (this.state.note.name === 'D♯') {
+                return '#0000FF';
+            } else if (this.state.note.name === 'G♯') {
+                return '#8A2BE2';
+            } else if (this.state.note.name === 'A♯') {
+                return '#4B0082';
+            } else {
+                return 'black';
+            }
+        };
+
+        let color = colorGen(); // a hex code for an attractive color
+        return {
+            flexDirection: 'column',
+            height: '100%',
+            width: '100%',
+            backgroundColor: color
+        };
     };
 
     toggleSplash = () => {
@@ -131,6 +174,7 @@ export default class App extends Component {
                             toggleLog={this.toggleLog}
                             toggleLogPage={this.toggleLogPage}
                             toMain={this.toMain}
+                            spin={this.spin()}
                         />
                     )}
                     {!this.state.showLog && (
@@ -141,6 +185,7 @@ export default class App extends Component {
                             toggleLog={this.toggleLog}
                             toggleLogPage={this.toggleLogPage}
                             toMain={this.toMain}
+                            spin={this.spin()}
                         />
                     )}
                     {!this.state.showSaved && (
@@ -151,6 +196,7 @@ export default class App extends Component {
                             toggleLog={this.toggleLog}
                             toggleLogPage={this.toggleLogPage}
                             toMain={this.toMain}
+                            spin={this.spin()}
                         />
                     )}
                 </View>
