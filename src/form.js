@@ -21,7 +21,7 @@ export default class FormExample extends Component {
                             <Input style={style.placeH} placeholder='Initials' />
                         </Item>
                         <Button style={style.logButton} onPress={this.props.inputLog}>
-                            <Text>LOG</Text>
+                            <Icon name='checkmark' />
                         </Button>
                     </Form>
                 </Content>
