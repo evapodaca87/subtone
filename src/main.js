@@ -95,6 +95,9 @@ export default class Main extends Component {
                         <Button iconCenter style={style.logButton} onPress={this.props.toggleLog}>
                             <Icon name='cloud-download' />
                         </Button>
+                        <Button iconCenter style={style.viewlogButton} onPress={this.props.toggleLog}>
+                            <Icon name='list' />
+                        </Button>
                         <Button iconCenter style={style.keyButton} onPress={this.showKey}>
                             <Icon name='key' />
                         </Button>
@@ -201,17 +204,22 @@ const style = StyleSheet.create({
     homeButton: {
         flexDirection: 'row',
         justifyContent: 'center',
-        width: '33.3333%',
+        width: '25%',
         backgroundColor: '#1ABC9C'
     },
     logButton: {
         justifyContent: 'center',
-        width: '33.3333%',
+        width: '25%',
         backgroundColor: '#D35400'
+    },
+    viewlogButton: {
+        justifyContent: 'center',
+        width: '25%',
+        backgroundColor: '#9ACD32'
     },
     keyButton: {
         justifyContent: 'center',
-        width: '33.3333%',
+        width: '25%',
         backgroundColor: '#7D3C98'
     },
     closeButton: {

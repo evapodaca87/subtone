@@ -7,9 +7,7 @@ export default class Log extends PureComponent {
     render() {
         return (
             <View style={style.logPage}>
-                <View>
-                    <Text style={style.logHead}>DATA</Text>
-                </View>
+                <View />
                 <Form style={style.inputs} inputLog={this.props.inputLog} />
                 <View style={style.nav}>
                     <Button iconCenter style={style.close} onPress={this.props.toggleSplash}>
