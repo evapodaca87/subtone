@@ -95,7 +95,7 @@ export default class Main extends Component {
                         <Button iconCenter style={style.logButton} onPress={this.props.toggleLog}>
                             <Icon name='cloud-download' />
                         </Button>
-                        <Button iconCenter style={style.viewlogButton} onPress={this.props.toggleLog}>
+                        <Button iconCenter style={style.viewlogButton} onPress={this.props.toggleLogPage}>
                             <Icon name='list' />
                         </Button>
                         <Button iconCenter style={style.keyButton} onPress={this.showKey}>

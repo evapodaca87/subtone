@@ -5,6 +5,7 @@ import Tuner from './src/tuner';
 import Splash from './src/Splash';
 import Main from './src/main';
 import Log from './src/log';
+import Saved from './src/saved';
 
 export default class App extends Component {
     state = {
@@ -15,14 +16,16 @@ export default class App extends Component {
         },
         showSplash: false,
         showMain: true,
-        showLog: true
+        showLog: true,
+        showSaved: true
     };
 
     toggleSplash = () => {
         this.setState({
             showSplash: true,
             showMain: false,
-            showLog: true
+            showLog: true,
+            showSaved: true
         });
         Toast.show({
             text: 'EPILEPSY WARNING',
@@ -39,15 +42,27 @@ export default class App extends Component {
         this.setState({
             showSplash: false,
             showMain: true,
-            showLog: true
+            showLog: true,
+            showSaved: true
+        });
+    };
+
+    toggleLogPage = () => {
+        this.setState({
+            showSplash: true,
+            showMain: true,
+            showLog: true,
+            showSaved: false
         });
     };
 
     toggleLog = () => {
+        console.log('PRESSSSSSSSSS');
         this.setState({
             showSplash: true,
             showMain: true,
-            showLog: false
+            showLog: false,
+            showSaved: true
         });
     };
 
@@ -55,7 +70,8 @@ export default class App extends Component {
         this.setState({
             showSplash: true,
             showMain: false,
-            showLog: true
+            showLog: true,
+            showSaved: true
         });
         Toast.show({
             text: 'Entry Logged!',
@@ -89,8 +105,15 @@ export default class App extends Component {
             <Root>
                 <View style={style.body}>
                     {!this.state.showSplash && <Splash toggleSplash={this.toggleSplash} />}
-                    {!this.state.showMain && <Main toggleHome={this.toggleHome} toggleLog={this.toggleLog} />}
+                    {!this.state.showMain && (
+                        <Main
+                            toggleHome={this.toggleHome}
+                            toggleLog={this.toggleLog}
+                            toggleLogPage={this.toggleLogPage}
+                        />
+                    )}
                     {!this.state.showLog && <Log toggleSplash={this.toggleSplash} inputLog={this.inputLog} />}
+                    {!this.state.showSaved && <Saved toggleSplash={this.toggleSplash} />}
                 </View>
             </Root>
         );
