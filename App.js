@@ -150,15 +150,15 @@ export default class App extends Component {
             init: 'VM'
         },
         {
-            title: "Don't Leave",
-            artist: 'Oshi',
-            key: 'B',
-            init: 'VM'
+            title: 'Slide',
+            artist: 'Inflated Penguins',
+            key: 'G#',
+            init: 'ESA'
         },
         {
-            title: "Don't Leave",
-            artist: 'Oshi',
-            key: 'B',
+            title: 'give u up',
+            artist: 'Maxwell Hits',
+            key: 'C',
             init: 'VM'
         },
         {
