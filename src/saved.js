@@ -83,7 +83,7 @@ const style = StyleSheet.create({
         width: '10%',
         color: 'white',
         height: 'auto',
-        fontSize: 30
+        fontSize: 38
     },
     track: {
         height: '15%',
