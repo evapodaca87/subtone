@@ -186,6 +186,7 @@ export default class App extends Component {
     }
 
     render() {
+        console.disableYellowBox = true;
         return (
             <Root>
                 <View style={style.body}>
