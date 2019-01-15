@@ -14,19 +14,17 @@ var totallyRandomColor = randomColor(); // a hex code for an attractive color
 export default class Log extends PureComponent {
     render() {
         return (
-            <ImageBackground source={bottom} style={style.logPage}>
+            <ImageBackground source={bottom} style={style.logPage} backgroundColor={randomColor()}>
                 <View style={style.logPage}>
                     <Text style={style.eh1}>Log</Text>
-                    <Form style={style.inputs} inputLog={this.props.inputLog} />
-                    <View style={style.nav}>
-                        <Navbar
-                            toggleHome={this.props.toggleHome}
-                            toggleLog={this.props.toggleLog}
-                            showKey={this.showKey}
-                            toggleLogPage={this.props.toggleLogPage}
-                            toMain={this.props.toMain}
-                        />
-                    </View>
+                    <Form inputLog={this.props.inputLog} />
+                    <Navbar
+                        toggleHome={this.props.toggleHome}
+                        toggleLog={this.props.toggleLog}
+                        showKey={this.showKey}
+                        toggleLogPage={this.props.toggleLogPage}
+                        toMain={this.props.toMain}
+                    />
                 </View>
             </ImageBackground>
         );
@@ -36,24 +34,8 @@ export default class Log extends PureComponent {
 const style = StyleSheet.create({
     logPage: {
         height: '100%',
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-        backgroundColor: randomColor()
-    },
-    nav: {
-        height: '5%'
-    },
-    close: {
-        justifyContent: 'center',
         width: '100%',
-        backgroundColor: 'red'
-    },
-    inputs: {
-        height: '10%'
-    },
-    logHead: {
-        color: 'white',
-        fontSize: 50
+        justifyContent: 'space-between'
     },
     eh1: {
         fontSize: 80,
