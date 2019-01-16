@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -46,7 +47,7 @@
 		58A585D493C24D6A8F04BD22 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A6C9370C2E34402A9DDFA50 /* MaterialIcons.ttf */; };
 		7853F69B755845CFB9A2B8E9 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43B906AD80F84BB39508588E /* Foundation.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		8D6849AC1EA443C59872AB1D /* libRealmReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AFFB82885F4F5CB8E1BD40 /* libRealmReact.a */; };
+		8D6849AC1EA443C59872AB1D /* libRealmReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AFFB82885F4F5CB8E1BD40 /* libRealmReact.a */; settings = {ATTRIBUTES = (Weak, ); }; };
 		90C1C5BFA431490B97070498 /* libRNVectorIcons-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E16251A58384C8DB1C01037 /* libRNVectorIcons-tvOS.a */; };
 		965CA810CF984B438CB84805 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4438A16B98384E25890A46D4 /* MaterialCommunityIcons.ttf */; };
 		9EF904E4C8E14B09BD0DAB3A /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB758077A4074F908EF7EC95 /* Roboto.ttf */; };
@@ -1484,6 +1485,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 2DMS9FJ2SL;
+				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-recording/lib/ios",
@@ -1516,6 +1518,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2DMS9FJ2SL;
+				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-recording/lib/ios",
@@ -1525,6 +1528,7 @@
 				INFOPLIST_FILE = subtone/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
