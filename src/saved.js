@@ -7,13 +7,10 @@ import Note from './note';
 import bottom from '../Images/spinspin.gif';
 import Navbar from '../Components/Navbar';
 
-var randomColor = require('randomcolor'); // import the script
-var totallyRandomColor = randomColor(); // a hex code for an attractive color
-
 export default class Saved extends PureComponent {
     render() {
         return (
-            <ImageBackground source={bottom} style={style.savedPage} backgroundColor={randomColor()}>
+            <ImageBackground source={bottom} style={style.savedPage} backgroundColor='#39FF14'>
                 <View style={style.savedPage}>
                     <Text style={style.eh1}>Samples</Text>
                     <View style={style.viewed}>
@@ -53,7 +50,10 @@ const style = StyleSheet.create({
         fontSize: 80,
         alignSelf: 'center',
         marginTop: '15%',
-        color: 'white'
+        color: 'white',
+        textShadowColor: 'rgba(0, 0, 0, 0.75)',
+        textShadowOffset: {width: 10, height: 10},
+        textShadowRadius: 5
     },
     viewed: {
         width: '90%',
@@ -62,7 +62,7 @@ const style = StyleSheet.create({
         flexDirection: 'column'
     },
     init: {
-        width: '10%',
+        width: '15%',
         color: 'white',
         height: 'auto',
         fontSize: 20
