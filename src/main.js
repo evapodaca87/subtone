@@ -89,9 +89,6 @@ export default class Main extends Component {
                         <Text style={style.frequency}>{this.state.note.frequency.toFixed(1)} Hz</Text>
                     </View>
                     <View style={style.nav}>
-                        <Button iconRight success style={style.button} onPress={this.props.toggleHome}>
-                            <Icon style={style.icon} name='home' />
-                        </Button>
                         <Button iconRight danger style={style.button} onPress={this.showKey}>
                             <Icon style={style.icon} name='key' />
                         </Button>
@@ -126,7 +123,9 @@ export default class Main extends Component {
                                 </View>
                                 <View style={style.split}>
                                     <View style={style.colorsFs}>
-                                        <Text style={style.letter}>F<Text style={style.hash}>♯</Text></Text>
+                                        <Text style={style.letter}>
+                                            F<Text style={style.hash}>♯</Text>
+                                        </Text>
                                     </View>
                                     <View style={style.colorsCs}>
                                         <Text style={style.letter}>
@@ -146,17 +145,18 @@ export default class Main extends Component {
                                 </View>
                                 <View style={style.split}>
                                     <View style={style.colorsGs}>
-                                        <Text style={style.letter}>G<Text style={style.hash}>♯</Text></Text>
+                                        <Text style={style.letter}>
+                                            G<Text style={style.hash}>♯</Text>
+                                        </Text>
                                     </View>
                                     <View style={style.colorsAs}>
-                                        <Text style={style.letter}>A<Text style={style.hash}>♯</Text></Text>
+                                        <Text style={style.letter}>
+                                            A<Text style={style.hash}>♯</Text>
+                                        </Text>
                                     </View>
                                 </View>
                             </View>
                             <View style={style.navi}>
-                                <Button iconRight success style={style.button} onPress={this.props.toggleHome}>
-                                    <Icon style={style.icon} name='home' />
-                                </Button>
                                 <Button iconRight danger style={style.button} onPress={this.showKey}>
                                     <Icon style={style.icon} name='key' />
                                 </Button>
@@ -196,8 +196,8 @@ const style = StyleSheet.create({
     },
     button: {
         flexDirection: 'row',
-        justifyContent: 'flex-end',
-        width: '14%'
+        justifyContent: 'center',
+        width: '100%'
     },
     icon: {
         flexDirection: 'column',
