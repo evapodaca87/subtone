@@ -13,9 +13,9 @@ var totallyRandomColor = randomColor(); // a hex code for an attractive color
 export default class App extends Component {
     state = {
         note: {
-            name: 'A',
-            octave: 4,
-            frequency: 440
+            name: 'W',
+            octave: 0,
+            frequency: 0
         },
         showSplash: false,
         showMain: true,
@@ -26,11 +26,11 @@ export default class App extends Component {
     spin = function(options) {
         let colorGen = () => {
             if (this.state.note.name === 'C') {
-                return '#ff0000';
+                return '#7C0A02';
             } else if (this.state.note.name === 'G') {
                 return '#ff4500';
             } else if (this.state.note.name === 'D') {
-                return '#FFA500';
+                return '#FF007F';
             } else if (this.state.note.name === 'A') {
                 return '#FFAE42';
             } else if (this.state.note.name === 'E') {

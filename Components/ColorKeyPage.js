@@ -115,7 +115,7 @@ const style = StyleSheet.create({
     colorsC: {
         height: 90,
         width: 90,
-        backgroundColor: '#ff0000',
+        backgroundColor: '#7C0A02',
         borderRadius: 10,
         alignItems: 'center'
     },
@@ -129,7 +129,7 @@ const style = StyleSheet.create({
     colorsD: {
         height: 90,
         width: 90,
-        backgroundColor: '#0D98BA',
+        backgroundColor: '#FF007F',
         borderRadius: 10,
         alignItems: 'center'
     },
