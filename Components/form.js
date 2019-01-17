@@ -57,6 +57,7 @@ const style = StyleSheet.create({
         padding: 0
     },
     placeH: {
-        textAlign: 'center'
+        textAlign: 'center',
+        color: 'white'
     }
 });

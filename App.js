@@ -144,12 +144,6 @@ export default class App extends Component {
             init: 'ESA'
         },
         {
-            title: "Don't Leave",
-            artist: 'Oshi',
-            key: 'B',
-            init: 'VM'
-        },
-        {
             title: 'Slide',
             artist: 'Inflated Penguins',
             key: 'G',
@@ -165,6 +159,12 @@ export default class App extends Component {
             title: 'Day 3',
             artist: 'TaKu',
             key: 'A',
+            init: 'ESA'
+        },
+        {
+            title: 'Slide',
+            artist: 'Inflated Penguins',
+            key: 'G',
             init: 'ESA'
         }
     ];
